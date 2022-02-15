@@ -8,14 +8,14 @@ blocks:
       padding: pt-40 pb-16 pr-7 pl-20
       featureImage: 'object-right-bottom object-scale-down '
       imagePadding: pt-12 pb-4 pr-0 pl-0
-      labelStyles: text-gray-light  text-xl mb-0 font-bold
-      headlineStyles: text-primary  text-6xl mb-0 font-bold
-      subheadStyles: text-gray  text-2xl mb-7 font-bold
-      textStyles: 'text-white  text-lg mb-11 '
+      labelStyles: text-gray-light undefined text-xl mb-0 font-bold
+      headlineStyles: text-primary undefined text-6xl mb-0 font-bold
+      subheadStyles: text-gray undefined text-2xl mb-7 font-bold
+      textStyles: 'text-white undefined text-lg mb-11 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1643128562/Hall_of_Fame_grccee.png
+        http://res.cloudinary.com/protocolai/image/upload/v1644964274/orbit-community/orbit-community_as8eed.png
     label: ''
     headline: Orbit Community 2
     subhead: A site builder for Web 3.0
