@@ -17,7 +17,7 @@ blocks:
       src: >-
         http://res.cloudinary.com/protocolai/image/upload/v1643128562/Hall_of_Fame_grccee.png
     label: ''
-    headline: MicroGen
+    headline: Orbit Community 2
     subhead: A site builder for Web 3.0
     body: Make modern web 3.0 ready websites with a real-time visual editor.
     buttons:
@@ -79,7 +79,7 @@ blocks:
       fillStyles: bg-primary
       textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-7 pb-10 pr-0 
+      padding: pt-7 pb-10 pr-0
       width: normal
       labelStyles: text-black  text-xl mb-0 font-bold
       headlineStyles: text-white  text-6xl mb-3 font-bold
