@@ -1,15 +1,13 @@
 import * as React from "react";
 import { Section } from "../section";
 
-export const Embed = ({ data }) => {
+export const Embed = ({ data, parentField = ""  }) => {
   const padding = data.style?.padding
   const width = data.style?.fullWidth ? "" : "max-w-desktop-full mx-auto"
 
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`${width} ${padding} ${data.style?.minHeight}`}>

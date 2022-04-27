@@ -1,20 +1,35 @@
-// ./plugins.tsx
 import AlignmentControl from './components/tina/AlignmentControl'
-import FillControl from './components/tina/FillControl'
-import TypeControl from './components/tina/TypeControl'
-import ImageControl from './components/tina/ImageControl'
-import PaddingControl from './components/tina/PaddingControl'
 import BorderControl from './components/tina/BorderControl'
-import SelectField from './components/tina/SelectField'
+import ColorControl from './components/tina/ColorControl'
 import FeatureContentField from './components/tina/FeatureContentField'
 import FeatureImageField from './components/tina/FeatureImageField'
+import FillControl from './components/tina/FillControl'
+import ImageControl from './components/tina/ImageControl'
+import PaddingControl from './components/tina/PaddingControl'
 import RuledTitle from './components/tina/RuledTitle'
-import { TextField } from 'tinacms'
+import SelectField from './components/tina/SelectField'
+import TypeControl from './components/tina/TypeControl'
+import TypeSizeControl from './components/tina/TypeSizeControl'
+import { TextField, GroupListField } from 'tinacms'
+
+export const itemListFieldPlugin = {
+  Component: (props) => {
+    const field = {
+      ...props.field,
+      itemProps: (item) => {
+        return { label: item.headline || item.subhead || item.label }
+      },
+    }
+    return <GroupListField {...props} field={field} />
+  },
+  __type: 'field',
+  name: 'itemListField'
+}
 
 export const emailFieldPlugin = {
   Component: TextField,
   __type: 'field',
-  name: 'text-email',
+  name: 'emailField',
   validate: (email, allValues, meta, field) => {
     let isValidEmail = /.*@.*\..*/.test(email)
     if (!isValidEmail) return 'Invalid email address'
@@ -34,10 +49,22 @@ export const alignmentControlFieldPlugin = {
 }
 
 export const typeControlFieldPlugin = {
-    Component: TypeControl,
-    __type: 'field',
-    name: 'typeControl',
-  }
+  Component: TypeControl,
+  __type: 'field',
+  name: 'typeControl',
+}
+
+export const typeSizeControlFieldPlugin = {
+  Component: TypeSizeControl,
+  __type: 'field',
+  name: 'typeSizeControl',
+}
+
+export const colorControlFieldPlugin = {
+  Component: ColorControl,
+  __type: 'field',
+  name: 'colorControl',
+}
 
 export const fillControlFieldPlugin = {
   Component: FillControl,

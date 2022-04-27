@@ -45,16 +45,16 @@ export default function FeatureContentField({ field, input, meta }) {
 
   function SelectGroup(props) {
     return (
-      <div className="relative flex-1">
-        <span className="absolute text-xs font-bold top-2 left-1.5" style={{ color: "var(--tina-color-grey-3" }}>{props.label}</span>
-        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="pl-4 w-full" />
+      <div className="relative flex-1 pl-5">
+        <span className="absolute text-xs text-gray-300 font-bold top-3 left-0">{props.label}</span>
+        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="w-full" />
       </div>
     )
   }
 
   return (
     <div className="mb-4">
-      <div className="flex items-center gap-1.5">
+      <div className="flex items-center gap-2">
         <SelectGroup label="W" value={width} onChange={setWidth} options={widthOptions} className="w-1/3 shrink-0" />
         <SelectGroup label="H" value={height} onChange={setHeight} options={heightOptions} className="w-1/3 shrink-0" />
         <div className="w-1/3">

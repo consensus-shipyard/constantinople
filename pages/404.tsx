@@ -1,6 +1,5 @@
 import { getStaticPropsForTina } from "tinacms";
 import { Feature } from "../components/blocks/feature";
-import { layoutQueryFragment } from "../components/layout";
 import { AsyncReturnType } from "./[filename]";
 
 export default function FourOhFour(
@@ -29,7 +28,47 @@ export const getStaticProps = async () => {
   const tinaProps = await getStaticPropsForTina({
     query: `#graphql
       query PageQuery {
-        ${layoutQueryFragment}
+        getGlobalDocument(relativePath: "index.json") {
+          data {
+            siteUrl
+            favicon
+            gtmId
+            redirects {
+              from
+              to
+            }
+            colors {
+              primary
+              accent1
+              accent2
+              accent3
+              accent4
+              white
+              grayLight
+              gray
+              grayDark
+              black
+            }
+            logo {
+              logoType
+              logoTypeStyle
+              image
+              imageWidth
+              imageHeight
+              imageMargin
+            }
+            nav {
+              navItems {
+                link
+                label
+              }
+              navAlignment
+              navTypeStyle
+              navBackgroundColor
+              padding
+            }
+          }
+        }
       }
     `,
     variables: {},

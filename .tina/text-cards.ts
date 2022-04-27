@@ -1,4 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
+import { backgroundSchema } from "./shared/background";
 import { buttonsSchema } from "./shared/buttons";
 import { cardsSchema } from "./shared/cards";
 import { navigationLabelSchema } from "./shared/navigation-label";
@@ -7,7 +8,18 @@ import { colorOptions } from "./shared/options"
 const defaultCard = {
   headline: "Here's Another Card",
   subhead: "",
-  text: "This is where you might talk about the card, if this wasn't just filler text.",
+  text: {
+    children: [
+     {
+       type: "p",
+       children: [
+          {
+            text: "This is a rich text component you can add hyperlinks, etc."
+          }
+        ]
+      }
+    ]
+  },
 };
 
 export const textCardsBlockSchema: TinaTemplate = {
@@ -18,26 +30,40 @@ export const textCardsBlockSchema: TinaTemplate = {
       label: "",
       headline: "This is a headline",
       subhead: "Here is a subhead",
-      body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      body: {
+        children: [
+         {
+           type: "p",
+           children: [
+              {
+                text: "This is a rich text component you can add hyperlinks, etc."
+              }
+            ]
+          }
+        ]
+      },
       style: {
+        textAlignment: "text-left",
+        minHeight: "min-h-0",
+        padding: "pt-20 pr-20 pb-20 pl-20",
+        contentWidth: "w-full",
         columns: "3",
-        fillStyles: "bg-white",
-        textAlignment: "left",
-        contentOrder: "labelHeadingsContent",
-        labelStyles: "text-black text-sm mb-0",
-        headlineStyles: "text-black text-5xl mb-0",
-        subheadStyles: "text-black text-3xl mb-0",
-        textStyles: "text-black text-md mb-0",
+        labelStyles: "text-black font-1 text-sm mb-0",
+        headlineStyles: "text-black font-1 text-5xl mb-0",
+        subheadStyles: "text-black font-1 text-3xl mb-0",
+        textStyles: "text-black font-1 text-md mb-0",
+        contentOrder: "labelHeadingsContent",    
       },
       cardStyle: {
-        type: "solid",
-        buttonType: "solid",
-        accentColor: "primary",
         fillStyles: "bg-gray",
-        labelStyles: "text-black text-sm mb-0",
-        headlineStyles: "text-black text-2xl mb-0",
-        subheadStyles: "text-black text-lg mb-0",
-        textStyles: "text-black text-sm mb-0",
+        padding: "pt-4 pr-4 pb-4 pl-4",
+        labelStyles: "text-black font-1 text-sm mb-0",
+        headlineStyles: "text-black font-1 text-2xl mb-0",
+        subheadStyles: "text-black font-1 text-md mb-0",
+        textStyles: "text-black font-1 text-sm mb-0",
+        borderStyles: "border-gray",
+        buttonType: "solid",
+        buttonTextColor: "text-primary",
       },
       items: [defaultCard, defaultCard, defaultCard],
     },
@@ -79,15 +105,6 @@ export const textCardsBlockSchema: TinaTemplate = {
             { label: "Solid", value: "solid" },
             { label: "Transparent Background", value: "transparent" },
           ],
-        },
-        {
-          label: "Accent Color",
-          name: "accentColor",
-          type: "string",
-          ui: {
-            component: "selectField",
-          },
-          options: colorOptions,
         },
         {
           type: "string",
@@ -169,40 +186,7 @@ export const textCardsBlockSchema: TinaTemplate = {
         },
       ],
     },
-    {
-      label: "Background Image",
-      name: "backgroundImage",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-          ui: {
-            clearable: true,
-          }
-        },     
-        {
-          label: "Position",
-          name: "position",
-          ui: {
-            component: "selectField",
-          },
-          type: "string",
-          options: [
-            { label: "Bottom", value: "object-bottom" },
-            { label: "Center", value: "object-center" },
-            { label: "Left", value: "object-left" },
-            { label: "Left Bottom", value: "object-left-bottom" },
-            { label: "Left Top", value: "object-left-top" },
-            { label: "Right", value: "object-right" },
-            { label: "Right Bottom", value: "object-right-bottom" },
-            { label: "Right Top", value: "object-right-top" },
-            { label: "Top", value: "object-top" },
-          ],
-        },
-      ],
-    },
+    backgroundSchema,
     {
       label: "Label",
       name: "label",
@@ -221,10 +205,7 @@ export const textCardsBlockSchema: TinaTemplate = {
     {
       label: "Body",
       name: "body",
-      type: "string",
-      ui: {
-        component: "markdown",
-      },
+      type: "rich-text",
     },
     buttonsSchema,
     {
@@ -233,10 +214,7 @@ export const textCardsBlockSchema: TinaTemplate = {
       name: "items",
       list: true,
       ui: {
-        component: 'cards',
-        defaultItem: {
-          ...defaultCard,
-        },
+        component: 'itemListField',
       },
       fields: [
         {
@@ -250,12 +228,9 @@ export const textCardsBlockSchema: TinaTemplate = {
           type: "string",
         },
         {
-          type: "string",
           label: "Text",
           name: "text",
-          ui: {
-            component: "markdown",
-          },
+          type: "rich-text",
         },
         {
           type: "string",

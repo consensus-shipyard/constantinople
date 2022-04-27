@@ -18,13 +18,10 @@ export default function SelectMenu(props:SelectMenuProps) {
     props.onChange(event.target.value);
   }
 
-  const selectClasses = `${props.className} border border-tina-gray2 text-sm p-1 h-9`;
-  const selectStyles = {
-    borderRadius: "var(--tina-radius-small)",
-  }
+  const selectClasses = `${props.className} border border-gray-100 text-gray-500 text-sm p-1 h-10 shadow rounded-md hover:text-blue-400 hover:border-gray-200 focus:shadow-outline focus:border-blue-500 focus:text-blue-500`;
 
   return (
-    <select value={props.value} onChange={handleChange} className={selectClasses} style={selectStyles}> 
+    <select value={props.value} onChange={handleChange} className={selectClasses}>
         {optionElements}
     </select>
   )

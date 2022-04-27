@@ -8,6 +8,7 @@ export const buttonsSchema: TinaField = {
   name: "buttons",
   list: true,
   ui: {
+    component: 'itemListField',
     defaultItem: {
       label: "Button Label",
       link: "/",

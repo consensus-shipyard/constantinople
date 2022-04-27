@@ -17,6 +17,19 @@
     "createDocument": "create",
     "updateDocument": "update"
   },
+  "GlobalBlocks": {
+    "type": "GlobalBlocks",
+    "resolveType": "unionData",
+    "typeMap": {
+      "feature": "GlobalBlocksFeature",
+      "photoCards": "GlobalBlocksPhotoCards",
+      "textCards": "GlobalBlocksTextCards",
+      "banner": "GlobalBlocksBanner",
+      "embed": "GlobalBlocksEmbed",
+      "tailwindFeature": "GlobalBlocksTailwindFeature",
+      "tailwindCards": "GlobalBlocksTailwindCards"
+    }
+  },
   "GlobalDocument": {
     "type": "GlobalDocument",
     "resolveType": "collectionDocument",
@@ -37,7 +50,9 @@
       "photoCards": "PagesBlocksPhotoCards",
       "textCards": "PagesBlocksTextCards",
       "banner": "PagesBlocksBanner",
-      "embed": "PagesBlocksEmbed"
+      "embed": "PagesBlocksEmbed",
+      "tailwindFeature": "PagesBlocksTailwindFeature",
+      "tailwindCards": "PagesBlocksTailwindCards"
     }
   },
   "PagesDocument": {

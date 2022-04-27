@@ -7,6 +7,7 @@ interface ColorPickerProps {
   onClick: Function;
   value: string;
   className?: string;
+  width?: number;
 }
 export default function ColorPicker(props:ColorPickerProps) {
   const colorOptions = [
@@ -51,18 +52,20 @@ export default function ColorPicker(props:ColorPickerProps) {
       borderColor: "var(--tina-color-grey-2)",
   }
   
-  const colorChipClasses = `border-box absolute w-6 h-6 rounded-sm bg-${props.value}`
+  const colorChipClasses = `bg-${props.value} border-box absolute w-7 h-7 rounded-sm`
   const colorChipStyles = {
       border: props.value === "white" ? "1px solid var(--tina-color-grey-2)" : "",
       top: "5px",
       left: "5px",
+      width: props.width ? `${props.width - 12}px` : '',
   }
 
-  const buttonClasses = `relative cursor-pointer text-sm font-bold border py-1 px-2 h-9 w-9 rounded ${props.className}`;
+  const buttonClasses = `${props.className} relative cursor-pointer py-1 px-2 h-10 w-10 border border-gray-100 text-gray-500 text-sm p-1 h-9 shadow rounded-md hover:text-blue-400 hover:border-gray-200 focus:shadow-outline focus:border-blue-500 focus:text-blue-500`;
   const buttonStyles = {
     borderColor: "var(--tina-color-grey-2)",
     color: isActive ? "var(--tina-color-primary)" : "var(--tina-color-grey-8)",
     backgroundColor: "white",
+    width: props.width ? `${props.width}px` : '',
   }
 
   const pickerOptions = colorOptions.map((option) => {

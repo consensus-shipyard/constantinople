@@ -2,12 +2,10 @@ import * as React from "react";
 import { Section } from "../section";
 import { Content } from "../content";
 
-export const Banner = ({ data }) => {
+export const Banner = ({ data, parentField = ""  }) => {
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`max-w-desktop-full mx-auto ${data?.style?.padding} ${data.style?.minHeight} ${data.style?.textAlignment}`}>
@@ -32,6 +30,7 @@ export const Banner = ({ data }) => {
             alignment = {data.style?.textAlignment}
             order = {data.style?.contentOrder}
             width = {data.style?.contentWidth}
+            parentField={parentField}
           />
         </div>
       </div>

@@ -11,14 +11,6 @@ export const cardsSchema: TinaField = {
   },
   fields: [
     {
-      type: "string",
-      label: "Background",
-      name: "fillStyles",
-      ui: {
-        component: "fillControl"
-      }
-    },
-    {
       label: "Text Alignment",
       name: "textAlignment",
       type: "string",

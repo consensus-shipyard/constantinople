@@ -1,66 +1,118 @@
 import React from "react";
 import Head from "next/head";
-import { Footer } from "./footer";
-import layoutData from "../content/global/index.json";
+import { Header } from "./header";
+import { Blocks } from "../components/blocks";
+
+const systemFonts = ['Arial','Courier','Geneva','Georgia', 'Helvetica','Impact','Lucida Console','Lucida Grande','Monaco','Palatino','Tahoma','Times New Roman','Verdana']
+const customFonts = ['Suisse Intl']
+
+const googleFontsLink = (fonts) => {
+  const fontList = [fonts.font1, fonts.font2, fonts.font3, fonts.font4].filter(item => item !== undefined || '')
+  const uniqueFontList = [...new Set(fontList)]
+  const googleFontList = uniqueFontList.filter(item => !systemFonts.includes(item)).filter(item => !customFonts.includes(item))
+  const formattedFontList = googleFontList.map(item => item.split(' ').join('+'))
+  const familyString = formattedFontList.join('&family=')
+  const fontLink = `https://fonts.googleapis.com/css2?family=${familyString}&display=swap`
+  return fontList.length > 0 ?  fontLink : ''
+}
+
+const fontName = (font) => {
+  return font.includes(':') ? font.substr(0, font.indexOf(':')) : font
+}
+const fontSize = (font) => {
+  return font?.substring(0,font?.indexOf("/")) || "16"
+}
+const fontLeading = (font) => {
+  return font?.substring(font?.indexOf("/") + 1) || "16"
+}
 
 export const Layout = ({
-  data = layoutData,
-  themeData = {
-    colors: {
-      primary: "",
-      accent1: "",
-      accent2: "",
-      accent3: "",
-      accent4: "",
-      white: "",
-      grayLight: "",
-      gray: "",
-      grayDark: "",
-      black: "",
-    },
-    meta: {
-      siteTitle: "Filecoin Hackathon",
-      siteDescription: "Filecoin Hackathon Event",
-      siteImageSrc: ""
-    }
-  },
+  pageData,
+  globalData,
   children,
 }) => {
   return (
     <>
       <Head>
-        <title>{themeData?.meta?.siteTitle}</title>
+        <title>{pageData?.meta?.pageTitle}</title>
         <meta name="author" content="Protocol Labs"></meta>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="48x48" href={globalData?.favicon} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:site_name" content={data?.siteUrl} />
-        <meta property="og:title" content={themeData?.meta?.siteTitle} />
-        <meta property="og:description" content={themeData?.meta?.siteDescription} />
-        <meta property="og:image" content={themeData?.meta?.siteImageSrc} />        
+        <meta property="og:site_name" content={globalData?.siteUrl} />
+        <meta property="og:title" content={pageData?.meta?.pageTitle} />
+        <meta property="og:description" content={pageData?.meta?.pageDescription} />
+        {globalData?.meta?.siteImageSrc &&
+          <meta property="og:image" content={globalData?.meta?.siteImageSrc} />
+        }
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content={globalData?.siteUrl} />
+        <meta property="twitter:url" content={globalData?.siteUrl} />
+        <meta name="twitter:title" content={pageData?.meta?.pageTitle} />
+        <meta name="twitter:description" content={pageData?.meta?.pageDescription} />
+        {globalData?.meta?.siteImageSrc &&
+          <meta name="twitter:image" content={globalData?.meta?.siteImageSrc} />
+        }
         <style
           id="customProperties"
+          // There is logic in the TypeControl component that figures out the custom property
+          // names to populate the font option labels.
+          // The typecontrol component should be revised with more direct access to data in 
+          // the future and then this comment should be removed.
           dangerouslySetInnerHTML={{
             __html: `
+            :root {
+              --primary-color: ${globalData?.colors?.primary};
+              --accent1-color: ${globalData?.colors?.accent1};
+              --accent2-color: ${globalData?.colors?.accent2};
+              --accent3-color: ${globalData?.colors?.accent3};
+              --accent4-color: ${globalData?.colors?.accent4};
+              --white-color: ${globalData?.colors?.white};
+              --black-color: ${globalData?.colors?.black};
+              --gray-light-color: ${globalData?.colors?.grayLight};
+              --gray-color: ${globalData?.colors?.gray};
+              --gray-dark-color: ${globalData?.colors?.grayDark};              
+              --link-color: ${globalData?.links?.color};              
+              --font1: ${fontName(globalData?.fonts?.font1)}, sans-serif;
+              --font2: ${fontName(globalData?.fonts?.font2)}, sans-serif;
+              --font3: ${fontName(globalData?.fonts?.font3)}, sans-serif;
+              --font4: ${fontName(globalData?.fonts?.font4)}, sans-serif;
+              --text-size-xs: ${fontSize(globalData?.sizeLeading?.textXs)}px;
+              --text-leading-xs: ${fontLeading(globalData?.sizeLeading?.textXs)}px;
+              --text-size-sm: ${fontSize(globalData?.sizeLeading?.textSm)}px;
+              --text-leading-sm: ${fontLeading(globalData?.sizeLeading?.textSm)}px;
+              --text-size-md: ${fontSize(globalData?.sizeLeading?.textMd)}px;
+              --text-leading-md: ${fontLeading(globalData?.sizeLeading?.textMd)}px;
+              --text-size-lg: ${fontSize(globalData?.sizeLeading?.textLg)}px;
+              --text-leading-lg: ${fontLeading(globalData?.sizeLeading?.textLg)}px;
+              --text-size-xl: ${fontSize(globalData?.sizeLeading?.textXl)}px;
+              --text-leading-xl: ${fontLeading(globalData?.sizeLeading?.textXl)}px;
+              --text-size-2xl: ${fontSize(globalData?.sizeLeading?.text2xl)}px;
+              --text-leading-2xl: ${fontLeading(globalData?.sizeLeading?.text2xl)}px;
+              --text-size-3xl: ${fontSize(globalData?.sizeLeading?.text3xl)}px;
+              --text-leading-3xl: ${fontLeading(globalData?.sizeLeading?.text3xl)}px;
+              --text-size-4xl: ${fontSize(globalData?.sizeLeading?.text4xl)}px;
+              --text-leading-4xl: ${fontLeading(globalData?.sizeLeading?.text4xl)}px;
+              --text-size-5xl: ${fontSize(globalData?.sizeLeading?.text5xl)}px;
+              --text-leading-5xl: ${fontLeading(globalData?.sizeLeading?.text5xl)}px;
+              --text-size-6xl: ${fontSize(globalData?.sizeLeading?.text6xl)}px;
+              --text-leading-6xl: ${fontLeading(globalData?.sizeLeading?.text6xl)}px;
+              --text-size-7xl: ${fontSize(globalData?.sizeLeading?.text7xl)}px;
+              --text-leading-7xl: ${fontLeading(globalData?.sizeLeading?.text7xl)}px;
+              --text-size-8xl: ${fontSize(globalData?.sizeLeading?.text8xl)}px;
+              --text-leading-8xl: ${fontLeading(globalData?.sizeLeading?.text8xl)}px;
+            }
             html {
               scroll-behavior: smooth;
             }
-            :root {
-              --primary-color: ${themeData?.colors?.primary};
-              --accent1-color: ${themeData?.colors?.accent1};
-              --accent2-color: ${themeData?.colors?.accent2};
-              --accent3-color: ${themeData?.colors?.accent3};
-              --accent4-color: ${themeData?.colors?.accent4};
-              --white-color: ${themeData?.colors?.white};
-              --black-color: ${themeData?.colors?.black};
-              --gray-light-color: ${themeData?.colors?.grayLight};
-              --gray-color: ${themeData?.colors?.gray};
-              --gray-dark-color: ${themeData?.colors?.grayDark};
+            .markdown a:not(.button) {
+              color: var(--${globalData?.links?.color}-color);
             }
             .markdown ul {
-              list-style: disc inside;
+              list-style: disc;
               margin-left: 1.5rem;
             }
-            .markdown ul li {
+            .markdown ul li,
+            .markdown ol li {
               margin-bottom: .5rem;
             }
             .markdown a {
@@ -69,24 +121,37 @@ export const Layout = ({
           `,
           }}
         />
+
+        {/* Google Analytics */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${globalData?.gtmId}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            if (document.location.hostname === "${globalData?.siteUrl}") {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${globalData?.gtmId}', {
+                  page_path: window.location.pathname,
+                });
+              }
+            `,
+          }}
+        />
+
+        {/* Google Fonts */ }
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        {googleFontsLink(globalData?.fonts) && (
+          <link href={googleFontsLink(globalData?.fonts)} rel="stylesheet"></link>
+        )}
       </Head>
       <div className={`min-h-screen flex flex-col`}>
+        <Header blocks={pageData?.blocks} globalData={globalData} />
         <div className="flex flex-col flex-1">{children}</div>
-        <Footer />
+        {/* Footer Blocks */}
+        <Blocks { ...globalData } />
       </div>
     </>
   );
 };
-
-export const layoutQueryFragment = `
-  getGlobalDocument(relativePath: "index.json") {
-    data {
-      siteUrl
-      gtmId
-      redirects {
-        from
-        to
-      }
-    }
-  }
-`;

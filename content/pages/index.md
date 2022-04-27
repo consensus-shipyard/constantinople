@@ -2,24 +2,27 @@
 draft: true
 blocks:
   - style:
-      fillStyles: from-accent1 to-black bg-gradient-to-br
       alignment: 'flex-row-reverse text-left items-center '
       featureContent: 'w-1/2 min-h-0 '
       padding: pt-40 pb-16 pr-7 pl-20
-      featureImage: 'object-right-bottom object-scale-down '
-      imagePadding: pt-12 pb-4 pr-0 pl-0
-      labelStyles: text-gray-light undefined text-xl mb-0 font-bold
-      headlineStyles: text-primary undefined text-6xl mb-0 font-bold
-      subheadStyles: text-gray undefined text-2xl mb-7 font-bold
-      textStyles: 'text-white undefined text-lg mb-11 '
+      featureImage: object-center object-cover to-edge
+      imagePadding: pt-0 pb-0 pr-0 pl-0
+      labelStyles: text-white font-2 text-xl mb-0 font-bold
+      headlineStyles: text-primary font-1 text-6xl mb-0 font-bold
+      subheadStyles: text-gray font-1 text-2xl mb-7 font-bold
+      textStyles: 'text-white font-1 text-lg mb-11 '
       contentOrder: labelHeadingsContent
+    background:
+      fillStyles: from-accent1 to-black bg-gradient-to-br
     image:
       src: >-
-        http://res.cloudinary.com/protocolai/image/upload/v1644964274/orbit-community/orbit-community_as8eed.png
+        https://res.cloudinary.com/protocolai/image/upload/v1649882497/microgen/Hall_of_Fame_grccee_k39etu.png
+      alt: Illustration of space shuttles
     label: ''
-    headline: Orbit Community 2
+    headline: Microgen
     subhead: A site builder for Web 3.0
-    body: Make modern web 3.0 ready websites with a real-time visual editor.
+    body: |
+      Make [modern web 3.0](#) ready websites with a real-time visual editor.
     buttons:
       - label: Get Started
         link: 'https://github.com/filecoin-project/microgen'
@@ -28,12 +31,51 @@ blocks:
         textColor: white
         backgroundColor: black
     _template: feature
+  - tailwind:
+      section: p-8
+      wrap: ''
+      imageWrap: ''
+      image: ''
+      contentWrap: ''
+      content: ''
+      label: ''
+      headline: ''
+      subhead: ''
+      text: border
+      buttons: border
+      button: border
+    label: ''
+    headline: This is the main headline
+    subhead: Here is a subhead
+    body: |
+      This is a rich text component you can add hyperlinks, etc.
+    buttons:
+      - label: Button Label
+        link: /
+        type: solid
+        textColor: black
+        backgroundColor: primary
+    items:
+      - headline: Here's Another Card
+        subhead: Card Subhead
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+        link: '#'
+        buttonLabel: Card Button
+      - headline: Here's Another Card
+        subhead: Card Subhead
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+      - headline: Here's Another Card
+        subhead: Card Subhead
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+    _template: tailwindCards
   - style:
-      fillStyles: from-gray-light to-gray-light bg-gradient-to-t
       textAlignment: left
       padding: pt-20 pb-20 pr-20 pl-20
       columns: '2'
-      labelStyles: text-black font-sans text-xl mb-0 font-bold
+      labelStyles: text-black font-1 text-xl mb-0 font-bold
       headlineStyles: text-black  text-5xl mb-11 font-bold
       subheadStyles: text-black  text-3xl mb-0 font-bold
       textStyles: text-black  text-lg mb-0 font-bold
@@ -42,14 +84,15 @@ blocks:
       fillStyles: bg-white
       padding: pt-4 pb-4 pr-5 pl-7
       type: solid
-      accentColor: primary
-      borderStyles: border-primary border-l-4
-      labelStyles: 'text-black  text-sm mb-0 '
-      headlineStyles: text-primary  text-xl mb-2 font-bold
-      subheadStyles: 'text-black  text-lg mb-0 '
-      textStyles: 'text-black   mb-0 '
+      borderStyles: border-primary undefinedundefined
+      labelStyles: 'text-black undefined text-sm mb-0 '
+      headlineStyles: text-primary undefined text-xl mb-2 font-bold
+      subheadStyles: 'text-black undefined text-lg mb-0 '
+      textStyles: 'text-black undefined undefined mb-0 '
       buttonType: outline
       buttonTextColor: accent4
+    background:
+      fillStyles: bg-gray-light
     label: ''
     headline: Features
     subhead: ''
@@ -57,26 +100,26 @@ blocks:
     items:
       - headline: Deploy Quickly
         subhead: ''
-        text: >-
+        text: >
           Get a website complete with a visual CMS deployed in less than an hour
           on your choice of static host.
       - headline: Modern Features
         subhead: ''
-        text: >-
+        text: >
           Responsive design, open graph social sharing and google analytics on
           every site.
       - headline: Custom Design
         subhead: ''
-        text: >-
+        text: >
           Customize the look and feel of your site with a realtime visual
           editor, without writing a single line of code.
       - headline: Git Based
         subhead: ''
-        text: Version controlled content and design.
+        text: |
+          Version controlled content and design.
     navigationLabel: Features
     _template: textCards
   - style:
-      fillStyles: bg-primary
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-7 pb-10 pr-0
@@ -86,6 +129,8 @@ blocks:
       subheadStyles: text-black  text-3xl mb-0 font-bold
       textStyles: text-black  text-lg mb-0 font-bold
       contentOrder: labelHeadingsContent
+    background:
+      fillStyles: bg-primary
     label: ''
     headline: Learn More
     subhead: ''
@@ -102,12 +147,12 @@ blocks:
       minHeight: min-h-0
       fullWidth: false
       padding: pt-10 pb-10 pr-20 pl-20
+    background:
       fillStyles: bg-black
     markup: <p class="text-white">I am an embed</p>
     navigationLabel: Embed
     _template: embed
   - style:
-      fillStyles: bg-accent1
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-14 pb-20 pr-20 pl-20
@@ -122,7 +167,6 @@ blocks:
       fillStyles: bg-primary
       padding: pt-5 pb-5 pr-5 pl-5
       type: solid
-      accentColor: white
       imageStyles: '   '
       labelStyles: 'text-white  text-sm mb-0 '
       headlineStyles: 'text-white  text-2xl mb-0 '
@@ -130,6 +174,8 @@ blocks:
       textStyles: 'text-white   mb-0 '
       buttonType: outline
       buttonTextColor: white
+    background:
+      fillStyles: bg-accent1
     label: ''
     headline: Made with Microgen
     subhead: ''
@@ -137,20 +183,20 @@ blocks:
     items:
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1638476735/hackathons_z7pwah.png
+            https://res.cloudinary.com/protocolai/image/upload/v1649882496/microgen/hackathons_z7pwah_ulntqb.png
         headline: Hackathons
         subhead: ''
-        text: >-
+        text: >
           This is where you might talk about the card, if this wasn't just
           filler text.
         link: 'https://hackathons.filecoin.io/'
         buttonLabel: Visit Site
       - image:
           src: >-
-            http://res.cloudinary.com/protocolai/image/upload/v1638476723/asia-season_sn2gv8.png
+            https://res.cloudinary.com/protocolai/image/upload/v1649882497/microgen/asia-season_sn2gv8_bj7ovk.png
         headline: Asia Hackathon Season
         subhead: ''
-        text: >-
+        text: >
           This is where you might talk about the card, if this wasn't just
           filler text.
         link: 'https://hackathons.filecoin.io/asia-hackathon-season/'
@@ -158,28 +204,7 @@ blocks:
     navigationLabel: Made with Microgen
     _template: photoCards
 meta:
-  siteTitle: Hackathons
-  siteDescription: >-
-    With Filecoin and IPFS, we empower developers and entrepreneurs to solve
-    significant problems and ship innovative applications. Join our hackathons
-    and shape the future of the web to make it more decentralized, robust, and
-    secure!
-  siteImageSrc: >-
-    https://res.cloudinary.com/tombustout/image/upload/v1634005837/asia-hackathon-hero_isb8ak.png
-nav:
-  navAlignment: right
-  navTextColor: white
-  navBackgroundColor: accent4
-colors:
-  primary: '#0090FF'
-  accent1: '#0E4465'
-  accent2: '#2DDB87'
-  accent3: '#2DD0DB'
-  accent4: '#00D0DB'
-  white: '#FFFFFF'
-  grayLight: '#E8E8EF'
-  gray: '#B0B0BF'
-  grayDark: '#7B7A80'
-  black: '#000000'
+  pageTitle: Microgen
+  pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.
 ---
 

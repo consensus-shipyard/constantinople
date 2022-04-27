@@ -19,10 +19,9 @@ export default function ToggleButton(props:ToggleButtonProps) {
     props.onClick(newValue);
   }
 
-  const buttonClasses = ` py-1 px-2 h-9 bg-white text-sm font-bold border rounded ${props.className} `;
+  const buttonClasses = `${props.className} py-1 px-2 h-10 bg-white border font-bold border-gray-100 text-gray-500 text-sm shadow rounded-md hover:text-blue-400 hover:border-gray-200 focus:shadow-outline focus:border-blue-500 focus:text-blue-500`;
   const buttonStyles = {
     borderColor: "var(--tina-color-grey-2)",
-    boxShadow: isActive ? "inset 0 0 2px var(--tina-color-grey-3)" : "",
     color: isActive ? "var(--tina-color-primary)" : "var(--tina-color-grey-8)",
   }
 

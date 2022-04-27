@@ -100,9 +100,9 @@ export default function PaddingControl({ field, input, meta }) {
 
   function SelectGroup(props) {
     return (
-      <div className="relative flex-1">
-        <span className="absolute text-xs font-bold top-2 left-1.5" style={{ color: "var(--tina-color-grey-3" }}>{props.label}</span>
-        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="pl-4 w-full" />
+      <div className="relative flex-1 pl-5">
+        <span className="absolute text-xs text-gray-300 font-bold top-3 left-0.5">{props.label}</span>
+        <SelectMenu value={props.value} onChange={props.onChange} options={props.options} className="w-full" />
       </div>
     )
   }
@@ -111,7 +111,7 @@ export default function PaddingControl({ field, input, meta }) {
     <>
       <FieldLabel label={field.label} hasMobileStyles={hasMobileStyles} onMobileToggle={toggleMobile} mobileMode={true} />
       <div className="mb-4">
-        <div className="flex gap-1.5 mb-2">
+        <div className="flex gap-2 mb-2">
           <SelectGroup label="T" value={top} onChange={setTop} options={topOptions} />
           <SelectGroup label="B" value={bottom} onChange={setBottom} options={bottomOptions} />
           <SelectGroup label="R" value={right} onChange={setRight} options={rightOptions} />

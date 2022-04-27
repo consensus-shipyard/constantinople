@@ -42,7 +42,7 @@ export default function FeatureImageField({ field, input, meta }) {
 
   return (
     <div className="mb-4">
-      <div className="flex items-center gap-1.5">
+      <div className="flex items-center gap-2">
         <SelectMenu value={fit} onChange={setFit} options={fitOptions} className="w-1/3 shrink-0" />
         <SelectMenu value={position} onChange={setPosition} options={positionOptions} className="w-1/3 shrink-0" />
         <div className="w-1/3">

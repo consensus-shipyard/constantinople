@@ -46,7 +46,8 @@ export default function IconPicker(props:IconPickerProps) {
       borderColor: "var(--tina-color-grey-2)",
   }
 
-  const buttonClasses = `relative flex items-center h-9 pl-2 cursor-pointer font-bold bg-white border border-tina-gray2 text-center text-sm rounded ${props.className}`;
+  const buttonClasses = `${props.className} relative flex items-center h-10 pl-2 cursor-pointer bg-white font-bold text-center rounded 
+  border border-gray-100 text-gray-500 text-sm p-1 h-9 shadow rounded-md hover:text-blue-400 hover:border-gray-200 focus:shadow-outline focus:border-blue-500 focus:text-blue-500`;
   const buttonStyles = {
     color: isActive ? "var(--tina-color-primary)" : "var(--tina-color-grey-8)",
   }

@@ -1,4 +1,5 @@
 import type { TinaTemplate } from "@tinacms/cli";
+import { backgroundSchema } from "./shared/background";
 import { buttonsSchema } from "./shared/buttons";
 import { navigationLabelSchema } from "./shared/navigation-label";
 import { contentOrderOptions, hAlignOptions, minHeightOptions } from "./shared/options"
@@ -11,14 +12,26 @@ export const bannerBlockSchema: TinaTemplate = {
       label: "",
       headline: "This is the main headline",
       subhead: "Here is a subhead",
-      body: "Phasellus scelerisque, libero eu finibus rutrum, risus risus accumsan libero, nec molestie urna dui a leo.",
+      body: {
+        children: [
+         {
+           type: "p",
+           children: [
+              {
+                text: "This is a rich text component you can add hyperlinks, etc."
+              }
+            ]
+          }
+        ]
+      },
       style: {
-        labelStyles: "text-black text-sm mb-0",
-        headlineStyles: "text-black text-5xl mb-0",
-        subheadStyles: "text-black text-3xl mb-0",
-        textStyles: "text-black text-md mb-0",
-        fillStyles: "bg-white",
-        textAlignment: "left",
+        textAlignment: "text-left",
+        minHeight: "min-h-0",
+        padding: "pt-20 pr-10 pb-20 pl-10",
+        labelStyles: "text-black font-1 text-sm mb-0",
+        headlineStyles: "text-black font-1 text-5xl mb-0",
+        subheadStyles: "text-black font-1 text-3xl mb-0",
+        textStyles: "text-black font-1 text-md mb-0",
         contentOrder: "labelHeadingsContent",
         width: "normal"
       },
@@ -33,14 +46,6 @@ export const bannerBlockSchema: TinaTemplate = {
         component: "group",
       },
       fields: [
-        {
-          type: "string",
-          label: "Background",
-          name: "fillStyles",
-          ui: {
-            component: "fillControl"
-          }
-        },
         {
           label: "Text Alignment",
           name: "textAlignment",
@@ -131,6 +136,7 @@ export const bannerBlockSchema: TinaTemplate = {
         },
       ],
     },
+    backgroundSchema,
     {
       label: "Image",
       name: "image",
@@ -152,40 +158,6 @@ export const bannerBlockSchema: TinaTemplate = {
       ],
     },
     {
-      label: "Background Image",
-      name: "backgroundImage",
-      type: "object",
-      fields: [
-        {
-          label: "Image Source",
-          name: "src",
-          type: "image",
-          ui: {
-            clearable: true,
-          }
-        },
-        {
-          label: "Position",
-          name: "position",
-          ui: {
-            component: "selectField",
-          },
-          type: "string",
-          options: [
-            { label: "Bottom", value: "object-bottom" },
-            { label: "Center", value: "object-center" },
-            { label: "Left", value: "object-left" },
-            { label: "Left Bottom", value: "object-left-bottom" },
-            { label: "Left Top", value: "object-left-top" },
-            { label: "Right", value: "object-right" },
-            { label: "Right Bottom", value: "object-right-bottom" },
-            { label: "Right Top", value: "object-right-top" },
-            { label: "Top", value: "object-top" },
-          ],
-        },
-      ],
-    },
-    {
       label: "Label",
       name: "label",
       type: "string",
@@ -203,10 +175,7 @@ export const bannerBlockSchema: TinaTemplate = {
     {
       label: "Body",
       name: "body",
-      type: "string",
-      ui: {
-        component: "markdown",
-      },
+      type: "rich-text",
     },
     buttonsSchema,
     navigationLabelSchema,

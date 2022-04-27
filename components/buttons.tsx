@@ -4,6 +4,7 @@ import { isString } from "../helpers/utilities";
 export const Buttons = ({
   className = "",
   buttons,
+  parentField = ""
 }) => {
   const classes = (button) => {
     const textColor = {
@@ -47,7 +48,15 @@ export const Buttons = ({
       {buttons &&
         buttons.map(function (button, index) {
           const element = (
-              <a className={classes(button)} href={button.link} target={linkTarget(button.link)} key={index}>{ button.label }</a>
+              <a
+                className={classes(button)}
+                href={button.link}
+                target={linkTarget(button.link)}
+                key={index}
+                data-tinafield={`${parentField}.${index}`}
+              >
+                { button.label }
+              </a>
             );
           return element;
         })}

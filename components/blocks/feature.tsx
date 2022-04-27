@@ -89,13 +89,11 @@ const imageCss = (data) => {
   return `w-full ${height} ${padding} ${imageClasses}`;
 };
 
-export const Feature = ({ data }) => {
+export const Feature = ({ data, parentField = ""  }) => {
   const minHeight = data.style?.featureContent?.split(" ").find(item => item.includes("min-h-"))
   return (
     <Section
-      fillStyles={data.style?.fillStyles}
-      image={data.backgroundImage?.src}
-      imagePosition={data.backgroundImage?.position}
+      background={data.background}
       navigationLabel={data.navigationLabel}
     >
       <div className={`flex sm:flex-col ${data.style?.alignment} ${minHeight}`}>
@@ -105,6 +103,7 @@ export const Feature = ({ data }) => {
               className={`${imageCss(data)}`}
               alt={data.image?.alt}
               src={data.image?.src}
+              data-tinafield={`${parentField}.image`}
             />
           )}
         </div>
@@ -122,6 +121,7 @@ export const Feature = ({ data }) => {
             alignment = {data.style?.alignment}
             order = {data.style?.contentOrder}
             width = "w-full"
+            parentField={parentField}
           />
         </div>
       </div>
