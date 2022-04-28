@@ -35,16 +35,16 @@ blocks:
       fillStyles: bg-gray-dark
     headline: This is the main headline
     items:
-      - name: Full Name
-        twitter: Twitter Handle
-        country: singapore
-        badge: spaceship
-      - name: Name
-        twitter: Twitter
+      - name: Amnar Husami
+        twitter: husamia
         country: us
         badge: cadet
-      - name: Name
-        twitter: Twitter
+      - name: Ken Labs
+        twitter: KenLabs_Web3
+        country: china
+        badge: spaceship
+      - name: Blockchain Denver
+        twitter: du_web3
         country: us
         badge: cadet
     _template: leaderCards

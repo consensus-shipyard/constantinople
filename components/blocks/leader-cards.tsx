@@ -38,7 +38,7 @@ const Card = ({ data, index, parentField = ""  }) => {
 
 
 export const LeaderCards = ({ data, parentField = "" }) => {
-  const headerCard = "flex bg-black text-white text-md py-4 px-6 font-display2 md:px-6 lg:px-10";
+  const headerCard = "flex bg-black text-white text-md py-4 px-10 font-display2 md:px-6 lg:px-10";
   return (
     <Section className="py-20 px-12" background={data.background} navigationLabel={data.navigationLabel}>
       <div className="">
@@ -47,12 +47,12 @@ export const LeaderCards = ({ data, parentField = "" }) => {
       <div className="leader-cards max-w-desktop-full mx-auto grid gap-8 grid-cols-2 md:gap-6 sm:gap-4 sm:grid-cols-1">
         <div className={headerCard}>
           <span className="w-1/3 flex-1">Name</span>
-          <span className="px-6">Country</span>
+          <span className="pr-12 md:pr-6 sm:pr-4">Country</span>
           <span>Tier</span>
         </div>
         <div className={`${headerCard} sm:hidden`}>
           <span className="w-1/3 flex-1">Name</span>
-          <span className="px-6">Country</span>
+          <span className="pr-12 md:pr-6 sm:pr-4">Country</span>
           <span>Tier</span>
         </div>
         {data.items && (
