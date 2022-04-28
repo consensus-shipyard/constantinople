@@ -1,16 +1,9 @@
 import * as React from "react";
-import { isString } from "../../helpers/utilities";
 import { Section } from "../section";
-
-const linkTarget = (link) => {
-  const isExternalLink = isString(link) && link.charAt(0) !== '#'
-  return isExternalLink ? '_blank' : ''
-}
-
 
 const Card = ({ data, index, parentField = ""  }) => {
   return (
-    <div className="lc flex bg-accent1 text-white w-full py-4 px-10 sm:px-4">
+    <div className="lc flex bg-accent1 text-white w-full py-4 px-10 md:px-6 sm:px-4" data-tinafield={`${parentField}.${index}`}>
       <div className="lc-image-wrap w-12 h-12 mr-6 rounded-lg">
         {data.imageSrc && (
           <img
@@ -34,7 +27,7 @@ const Card = ({ data, index, parentField = ""  }) => {
           )}
         </div>
         <div
-          className="w-12 h-12 bg-contain bg-no-repeat mr-16 sm:mr-4"
+          className="w-12 h-12 bg-contain bg-no-repeat mr-12 md:mr-6 sm:mr-4"
           style={{backgroundImage: `url(./img/flag-${data.country}.png)`}}
         ></div>
         <div className="w-8 h-12 bg-contain bg-no-repeat" style={{backgroundImage: `url(./img/badge-${data.badge}.png)`}}></div>
@@ -45,15 +38,23 @@ const Card = ({ data, index, parentField = ""  }) => {
 
 
 export const LeaderCards = ({ data, parentField = "" }) => {
-  const tw = data.tailwind || {};
+  const headerCard = "flex bg-black text-white text-md py-4 px-6 font-display2 md:px-6 lg:px-10";
   return (
-    <Section className="p-20" background={data.background} navigationLabel={data.navigationLabel}>
+    <Section className="py-20 px-12" background={data.background} navigationLabel={data.navigationLabel}>
       <div className="">
-        <div className={tw.content}>
-          {data.headline && <h2 className="font-bold font-display2 text-xl uppercase text-center text-white mb-8" data-tinafield={`${parentField}.headline`}>{data.headline}</h2>}
-        </div>
+        {data.headline && <h2 className="font-bold font-display2 text-xl uppercase text-center text-white mb-8" data-tinafield={`${parentField}.headline`}>{data.headline}</h2>}
       </div>
-      <div className="leader-cards grid gap-8 grid-cols-2 sm:gap-4 sm:grid-cols-1">
+      <div className="leader-cards max-w-desktop-full mx-auto grid gap-8 grid-cols-2 md:gap-6 sm:gap-4 sm:grid-cols-1">
+        <div className={headerCard}>
+          <span className="w-1/3 flex-1">Name</span>
+          <span className="px-6">Country</span>
+          <span>Tier</span>
+        </div>
+        <div className={`${headerCard} sm:hidden`}>
+          <span className="w-1/3 flex-1">Name</span>
+          <span className="px-6">Country</span>
+          <span>Tier</span>
+        </div>
         {data.items && (
           data.items.map(function (block, index) {
             return <Card
