@@ -11,6 +11,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      backgroundColor: ['first', 'last'],
       margin: ['first', 'last'],
     }
   },
