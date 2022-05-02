@@ -75,7 +75,7 @@ export const leaderCardsBlockSchema: TinaTemplate = {
             { label: "Nigeria", value: "nigeria" },
             { label: "Singapore", value: "singapore" },
             { label: "South Korea", value: "south-korea" },
-            { label: "Switzerland", value: "swiss" },
+            { label: "Switzerland", value: "switzerland" },
             { label: "Tanzania", value: "tanzania" },
             { label: "Uganda", value: "uganda" },
             { label: "UK", value: "uk" },
