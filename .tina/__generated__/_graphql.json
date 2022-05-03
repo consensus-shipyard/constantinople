@@ -12876,7 +12876,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsBackgroundOrnaments"
+        "value": "PagesBlocksSpeakerCardsBackgroundOrnaments"
       },
       "fields": [
         {
@@ -12977,7 +12977,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsBackground"
+        "value": "PagesBlocksSpeakerCardsBackground"
       },
       "fields": [
         {
@@ -13038,7 +13038,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksLeaderCardsBackgroundOrnaments"
+                "value": "PagesBlocksSpeakerCardsBackgroundOrnaments"
               }
             }
           }
@@ -13051,7 +13051,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsItems"
+        "value": "PagesBlocksSpeakerCardsCards"
       },
       "fields": [
         {
@@ -13088,7 +13088,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "twitter"
+            "value": "title"
           },
           "arguments": [],
           "type": {
@@ -13103,7 +13103,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "country"
+            "value": "label"
           },
           "arguments": [],
           "type": {
@@ -13118,7 +13118,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "badge"
+            "value": "headline"
           },
           "arguments": [],
           "type": {
@@ -13126,6 +13126,21 @@
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "text"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "JSON"
             }
           }
         }
@@ -13137,7 +13152,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCards"
+        "value": "PagesBlocksSpeakerCards"
       },
       "fields": [
         {
@@ -13151,7 +13166,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksLeaderCardsBackground"
+              "value": "PagesBlocksSpeakerCardsBackground"
             }
           }
         },
@@ -13189,7 +13204,7 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "items"
+            "value": "cards"
           },
           "arguments": [],
           "type": {
@@ -13198,7 +13213,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksLeaderCardsItems"
+                "value": "PagesBlocksSpeakerCardsCards"
               }
             }
           }
@@ -13296,7 +13311,7 @@
           "kind": "NamedType",
           "name": {
             "kind": "Name",
-            "value": "PagesBlocksLeaderCards"
+            "value": "PagesBlocksSpeakerCards"
           }
         }
       ]
@@ -24679,7 +24694,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsBackgroundOrnamentsMutation"
+        "value": "PagesBlocksSpeakerCardsBackgroundOrnamentsMutation"
       },
       "fields": [
         {
@@ -24772,7 +24787,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsBackgroundMutation"
+        "value": "PagesBlocksSpeakerCardsBackgroundMutation"
       },
       "fields": [
         {
@@ -24829,7 +24844,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksLeaderCardsBackgroundOrnamentsMutation"
+                "value": "PagesBlocksSpeakerCardsBackgroundOrnamentsMutation"
               }
             }
           }
@@ -24840,7 +24855,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsItemsMutation"
+        "value": "PagesBlocksSpeakerCardsCardsMutation"
       },
       "fields": [
         {
@@ -24875,7 +24890,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "twitter"
+            "value": "title"
           },
           "type": {
             "kind": "NamedType",
@@ -24889,7 +24904,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "country"
+            "value": "label"
           },
           "type": {
             "kind": "NamedType",
@@ -24903,13 +24918,27 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "badge"
+            "value": "headline"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
               "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "text"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "JSON"
             }
           }
         }
@@ -24919,7 +24948,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksLeaderCardsMutation"
+        "value": "PagesBlocksSpeakerCardsMutation"
       },
       "fields": [
         {
@@ -24932,7 +24961,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksLeaderCardsBackgroundMutation"
+              "value": "PagesBlocksSpeakerCardsBackgroundMutation"
             }
           }
         },
@@ -24968,7 +24997,7 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "items"
+            "value": "cards"
           },
           "type": {
             "kind": "ListType",
@@ -24976,7 +25005,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksLeaderCardsItemsMutation"
+                "value": "PagesBlocksSpeakerCardsCardsMutation"
               }
             }
           }
@@ -25120,13 +25149,13 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "leaderCards"
+            "value": "speakerCards"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksLeaderCardsMutation"
+              "value": "PagesBlocksSpeakerCardsMutation"
             }
           }
         }

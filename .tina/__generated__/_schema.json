@@ -20345,29 +20345,29 @@
               ]
             },
             {
-              "name": "leaderCards",
-              "label": "Leader Cards",
+              "name": "speakerCards",
+              "label": "Speaker Cards",
               "ui": {
                 "defaultItem": {
                   "headline": "This is the main headline",
-                  "items": [
+                  "cards": [
                     {
                       "name": "Name",
-                      "twitter": "Twitter",
-                      "country": "us",
-                      "badge": "cadet"
+                      "title": "Title",
+                      "label": "Label",
+                      "headline": "Headline"
                     },
                     {
                       "name": "Name",
-                      "twitter": "Twitter",
-                      "country": "us",
-                      "badge": "cadet"
+                      "title": "Title",
+                      "label": "Label",
+                      "headline": "Headline"
                     },
                     {
                       "name": "Name",
-                      "twitter": "Twitter",
-                      "country": "us",
-                      "badge": "cadet"
+                      "title": "Title",
+                      "label": "Label",
+                      "headline": "Headline"
                     }
                   ]
                 }
@@ -20388,7 +20388,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
+                        "speakerCards",
                         "background",
                         "fillStyles"
                       ]
@@ -20403,7 +20403,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
+                        "speakerCards",
                         "background",
                         "src"
                       ]
@@ -20456,7 +20456,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
+                        "speakerCards",
                         "background",
                         "position"
                       ]
@@ -20477,7 +20477,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "src"
@@ -20531,7 +20531,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "alignment"
@@ -20544,7 +20544,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "width"
@@ -20557,7 +20557,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "height"
@@ -20570,7 +20570,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "xOffset"
@@ -20583,7 +20583,7 @@
                           "namespace": [
                             "pages",
                             "blocks",
-                            "leaderCards",
+                            "speakerCards",
                             "background",
                             "ornaments",
                             "yOffset"
@@ -20593,7 +20593,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
+                        "speakerCards",
                         "background",
                         "ornaments"
                       ]
@@ -20602,7 +20602,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
+                    "speakerCards",
                     "background"
                   ]
                 },
@@ -20616,7 +20616,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
+                    "speakerCards",
                     "rule"
                   ]
                 },
@@ -20627,13 +20627,13 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
+                    "speakerCards",
                     "headline"
                   ]
                 },
                 {
                   "label": "Cards",
-                  "name": "items",
+                  "name": "cards",
                   "type": "object",
                   "list": true,
                   "ui": {
@@ -20650,131 +20650,77 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
-                        "items",
+                        "speakerCards",
+                        "cards",
                         "imageSrc"
                       ]
                     },
                     {
-                      "label": "Name",
+                      "label": "Speaker Name",
                       "name": "name",
                       "type": "string",
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
-                        "items",
+                        "speakerCards",
+                        "cards",
                         "name"
                       ]
                     },
                     {
-                      "label": "Twitter Handle",
-                      "name": "twitter",
+                      "label": "Speaker Title",
+                      "name": "title",
                       "type": "string",
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
-                        "items",
-                        "twitter"
+                        "speakerCards",
+                        "cards",
+                        "title"
                       ]
                     },
                     {
-                      "label": "Country",
-                      "name": "country",
+                      "label": "Label",
+                      "name": "label",
                       "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "China",
-                          "value": "china"
-                        },
-                        {
-                          "label": "Germany",
-                          "value": "germany"
-                        },
-                        {
-                          "label": "India",
-                          "value": "india"
-                        },
-                        {
-                          "label": "Kenya",
-                          "value": "kenya"
-                        },
-                        {
-                          "label": "Nigeria",
-                          "value": "nigeria"
-                        },
-                        {
-                          "label": "Singapore",
-                          "value": "singapore"
-                        },
-                        {
-                          "label": "South Korea",
-                          "value": "south-korea"
-                        },
-                        {
-                          "label": "Switzerland",
-                          "value": "switzerland"
-                        },
-                        {
-                          "label": "Tanzania",
-                          "value": "tanzania"
-                        },
-                        {
-                          "label": "Uganda",
-                          "value": "uganda"
-                        },
-                        {
-                          "label": "UK",
-                          "value": "uk"
-                        },
-                        {
-                          "label": "US",
-                          "value": "us"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
-                        "items",
-                        "country"
+                        "speakerCards",
+                        "cards",
+                        "label"
                       ]
                     },
                     {
-                      "label": "Badge",
-                      "name": "badge",
+                      "label": "Headline",
+                      "name": "headline",
                       "type": "string",
-                      "ui": {
-                        "component": "select"
-                      },
-                      "options": [
-                        {
-                          "label": "Cadet",
-                          "value": "cadet"
-                        },
-                        {
-                          "label": "Spaceship",
-                          "value": "spaceship"
-                        }
-                      ],
                       "namespace": [
                         "pages",
                         "blocks",
-                        "leaderCards",
-                        "items",
-                        "badge"
+                        "speakerCards",
+                        "cards",
+                        "headline"
+                      ]
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "type": "rich-text",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "speakerCards",
+                        "cards",
+                        "text"
                       ]
                     }
                   ],
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
-                    "items"
+                    "speakerCards",
+                    "cards"
                   ]
                 },
                 {
@@ -20787,7 +20733,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
+                    "speakerCards",
                     "rule2"
                   ]
                 },
@@ -20799,7 +20745,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "leaderCards",
+                    "speakerCards",
                     "navigationLabel"
                   ]
                 }
@@ -20807,7 +20753,7 @@
               "namespace": [
                 "pages",
                 "blocks",
-                "leaderCards"
+                "speakerCards"
               ]
             }
           ],

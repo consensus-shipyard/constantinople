@@ -7,7 +7,7 @@ import { bannerBlockSchema } from "./banner";
 import { embedBlockSchema } from "./embed";
 import { tailwindFeatureBlockSchema } from "./tailwind-feature";
 import { tailwindCardsBlockSchema } from "./tailwind-cards";
-import { leaderCardsBlockSchema } from "./leader-cards";
+import { speakerCardsBlockSchema } from "./speaker-cards";
 
 export default defineSchema({
   collections: [
@@ -36,7 +36,7 @@ export default defineSchema({
             embedBlockSchema,
             tailwindFeatureBlockSchema,
             tailwindCardsBlockSchema,
-            leaderCardsBlockSchema,
+            speakerCardsBlockSchema,
           ],
         },
         {

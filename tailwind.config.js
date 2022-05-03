@@ -93,8 +93,8 @@ module.exports = {
         "edge-80": "calc(((100% - 1024px)/2) + 819px)",
       },
       maxWidth: {
-        "desktop-full": "1024px",
-        "desktop-half": "512px",
+        "desktop-full": "960px",
+        "desktop-half": "480px",
         "lg-20": "204px",
         "lg-25": "256px",
         "lg-33": "340px",

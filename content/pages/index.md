@@ -3,9 +3,7 @@ draft: true
 blocks:
   - tailwind:
       section: ''
-      wrap: >-
-        pt-40 pb-16 flex border-4 h-full items-center border border-primary
-        max-w-desktop-full m-auto
+      wrap: pt-48 pb-16 flex items-center max-w-desktop-full mx-auto
       imageWrap: ''
       image: ''
       contentWrap: ''
@@ -25,11 +23,12 @@ blocks:
           alignment: bottom
           width: '460'
           height: '417'
-          xOffset: '-350'
+          xOffset: '-390'
         - src: >-
             https://res.cloudinary.com/protocolai/image/upload/v1651524200/consensus-factory/hero-ornament-right_dhqhk7.svg
           alignment: top
-          xOffset: '325'
+          xOffset: '300'
+          yOffset: '-45'
     label: Protocol Labs Research invites you to
     headline: Vector Commitment
     subhead: Research Day
@@ -65,6 +64,37 @@ blocks:
       tellus dapibus sapien, nec sodales ligula turpis ac dui. This X-hour event
       will include a number of sessions that explore this \[adjective] topic.
     _template: banner
+  - headline: This is the main headline
+    cards:
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651552471/consensus-factory/alin-tomescu_eldqft.jpg
+        name: Alin Tomescu
+        title: Aptos labs
+        label: 'Talk 7:'
+        headline: Are Merkle trees a panacea
+        text: >
+          Are Merkle trees a panacea? In this talk, I argue they are not and
+          present several tree-based vector commitments that offer interesting
+          trade-offs when compared to Merkle’s classic construction. First, I
+          will cover previous work on tree-based VCs from polynomial commitments
+          and lattices. Unlike Merkle trees, these constructions have a
+          combination of smaller proof sizes, useful homomorphisms and more
+          efficient proof aggregation.
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651551192/consensus-factory/chris-peikert_cmwkxw.jpg
+        name: Chris Peikert
+        title: Algorand and U. of Michigan
+        label: 'Talk 6:'
+        headline: Vector and Functional Commitments from Lattices
+        text: >
+          Vector commitments (VCs) allow one to commit concisely to an ordered
+          sequence of values, so that the values at desired positions can later
+          be concisely and verifiably revealed. In addition, a VC can be
+          statelessly updatable, meaning that commitments and proofs can be
+          updated to reflect changes to individual entries, using knowledge of
+          just those changes (and not the entire vector). To date, there have
+          been relatively few post-quantum constructions.
+    _template: speakerCards
 meta:
   pageTitle: Microgen
   pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.

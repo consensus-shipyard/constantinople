@@ -878,7 +878,7 @@ fragment PagesParts on Pages {
       rule2
       navigationLabel
     }
-    ... on PagesBlocksLeaderCards {
+    ... on PagesBlocksSpeakerCards {
       background {
         __typename
         fillStyles
@@ -896,13 +896,14 @@ fragment PagesParts on Pages {
       }
       rule
       headline
-      items {
+      cards {
         __typename
         imageSrc
         name
-        twitter
-        country
-        badge
+        title
+        label
+        headline
+        text
       }
       rule2
       navigationLabel
