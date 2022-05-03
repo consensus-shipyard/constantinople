@@ -1107,7 +1107,39 @@ type PagesBlocksSpeakerCards {
   navigationLabel: String
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksSpeakerCards
+type PagesBlocksScheduleBackgroundOrnaments {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+type PagesBlocksScheduleBackground {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksScheduleBackgroundOrnaments]
+}
+
+type PagesBlocksScheduleItems {
+  headline: String
+  time: String
+  name: String
+}
+
+type PagesBlocksSchedule {
+  background: PagesBlocksScheduleBackground
+  rule: String
+  headline: String
+  subhead: String
+  items: [PagesBlocksScheduleItems]
+  rule2: String
+  navigationLabel: String
+}
+
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksSpeakerCards | PagesBlocksSchedule
 
 type PagesMeta {
   pageTitle: String
@@ -2172,6 +2204,38 @@ input PagesBlocksSpeakerCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksScheduleBackgroundOrnamentsMutation {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+input PagesBlocksScheduleBackgroundMutation {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksScheduleBackgroundOrnamentsMutation]
+}
+
+input PagesBlocksScheduleItemsMutation {
+  headline: String
+  time: String
+  name: String
+}
+
+input PagesBlocksScheduleMutation {
+  background: PagesBlocksScheduleBackgroundMutation
+  rule: String
+  headline: String
+  subhead: String
+  items: [PagesBlocksScheduleItemsMutation]
+  rule2: String
+  navigationLabel: String
+}
+
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
@@ -2181,6 +2245,7 @@ input PagesBlocksMutation {
   tailwindFeature: PagesBlocksTailwindFeatureMutation
   tailwindCards: PagesBlocksTailwindCardsMutation
   speakerCards: PagesBlocksSpeakerCardsMutation
+  schedule: PagesBlocksScheduleMutation
 }
 
 input PagesMetaMutation {

@@ -3,7 +3,7 @@ draft: true
 blocks:
   - tailwind:
       section: ''
-      wrap: pt-48 pb-16 flex items-center max-w-desktop-full mx-auto
+      wrap: px-10 pt-48 pb-16 flex items-center max-w-desktop-full mx-auto
       imageWrap: ''
       image: ''
       contentWrap: ''
@@ -13,7 +13,7 @@ blocks:
       subhead: text-3xl font-bold font-2 border-b-3 inline-block pb-6 mb-16
       text: mb-12
       buttons: inline-flex flex-col
-      button: 'py-3 px-6 mb-4 first:bg-accent1 font-bold'
+      button: ' font-bold text-base py-2 px-4 mb-4 first:bg-accent1'
     background:
       src: >-
         https://res.cloudinary.com/protocolai/image/upload/v1651519685/consensus-factory/hero_bg_gocqtx.png
@@ -95,6 +95,56 @@ blocks:
           just those changes (and not the entire vector). To date, there have
           been relatively few post-quantum constructions.
     _template: speakerCards
+  - background:
+      src: >-
+        https://res.cloudinary.com/protocolai/image/upload/v1651519685/consensus-factory/hero_bg_gocqtx.png
+      position: object-center
+      ornaments:
+        - src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1651605746/consensus-factory/event-ornament-bottom_m9sjeg.svg
+          alignment: bottom
+          xOffset: '-600'
+        - src: >-
+            https://res.cloudinary.com/protocolai/image/upload/v1651605750/consensus-factory/event-ornament-top_s0gkrv.svg
+          alignment: top
+          xOffset: '500'
+    headline: Event Schedule
+    subhead: ''
+    items:
+      - headline: A journey in vector commitments
+        time: '11:00 am'
+        name: Dario Fiore
+      - headline: On the efficiency and flexibility of Linear-map vector commitments
+        time: '1:00 pm'
+        name: Arantxa Zapico
+      - headline: Are Merkle trees a panacea
+        time: '2:00 pm'
+        name: Alin Tomescu
+    _template: schedule
+  - style:
+      textAlignment: text-center
+      minHeight: min-h-0
+      padding: pt-20 pb-20 pr-10 pl-10
+      width: narrow
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-2xl mb-4 font-bold
+      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      textStyles: 'text-black font-1 undefined mb-8 '
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: '[registration CTA]'
+    subhead: ''
+    body: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
+      ultrices lobortis laoreet, ex tellus dapibus sapien.
+    buttons:
+      - label: Register
+        link: /
+        type: solid
+        buttonFillStyles: bg-accent1
+        textColor: white
+        backgroundColor: primary
+    _template: banner
 meta:
   pageTitle: Microgen
   pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.

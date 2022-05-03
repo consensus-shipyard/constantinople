@@ -7,7 +7,7 @@
     "accent1": "#FA4973",
     "accent2": "#49FADA",
     "accent3": "#F6FA49",
-    "accent4": "#00D0DB",
+    "accent4": "#ABA7E9",
     "white": "#FFFFFF",
     "grayLight": "#E8E8EF",
     "gray": "#B0B0BF",
@@ -15,8 +15,8 @@
     "black": "#000000"
   },
   "fonts": {
-    "font1": "Inter:wght@400;700",
-    "font2": "Source Sans Pro:wght@400;700",
+    "font1": "Suisse Intl",
+    "font2": "Open Sans:wght@400;700",
     "font3": "Rufina:wght@400;700",
     "font4": "IBM Plex Mono:wght@400;700"
   },
@@ -55,7 +55,7 @@
     "navAlignment": "text-right",
     "navTypeStyle": "text-white font-1 text-base mb-0 ",
     "navBackgroundColor": "from-primary to-accent2 bg-gradient-to-br",
-    "padding": "pt-5 pb-10 pr-5 pl-5 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5"
+    "padding": "pt-5 pb-10 pr-10 pl-10 sm:pt-5 sm:pb-5 sm:pr-5 sm:pl-5"
   },
   "blocks": [
     {
