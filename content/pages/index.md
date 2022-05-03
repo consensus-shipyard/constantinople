@@ -146,7 +146,7 @@ blocks:
         backgroundColor: primary
     _template: banner
 meta:
-  pageTitle: Microgen
-  pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.
+  pageTitle: Consensus Factory
+  pageDescription: Consensus Factory
 ---
 
