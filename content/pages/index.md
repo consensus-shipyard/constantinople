@@ -10,7 +10,7 @@ blocks:
       content: font-1 text-center text-white text-lg
       label: ''
       headline: text-3xl font-bold font-2
-      subhead: text-3xl font-bold font-2 border-b-3 inline-block pb-6 mb-16
+      subhead: text-2xl font-bold font-2 border-b-3 inline-block pb-6 mb-16
       text: mb-12
       buttons: inline-flex flex-col
       button: ' font-bold text-base py-2 px-4 mb-4 first:bg-accent1'
@@ -32,7 +32,7 @@ blocks:
     label: Protocol Labs Research invites you to
     headline: 'ConsensusFactory: '
     subhead: Decentralized Reflections on Consensus
-    body: >+
+    body: >
       Consensus is at the heart of decentralised systems, having taken centre
       stage with the introduction of Nakamoto’s Proof-of-Work (PoW) algorithm
       and the subsequent explosion of blockchain technology. However, it also
@@ -40,9 +40,6 @@ blocks:
       goal of this workshop is to present different scalability approaches being
       pursued across different projects, and foster new ideas and
       collaborations.
-
-
-
     buttons:
       - label: Register
         link: /
