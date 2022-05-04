@@ -32,13 +32,17 @@ blocks:
     label: Protocol Labs Research invites you to
     headline: 'ConsensusFactory: '
     subhead: Decentralized Reflections on Consensus
-    body: >
-      Vector commitments are powerful primitives that find applications in many
-      blockchains protocols. The goal of this workshop is to survey the state of
-      the art in research in Vector Commitments with survey talks, the
-      presentation of recent breakthrough results and discussions about the
-      important open problems, and how they are motivated by practical
-      applications.
+    body: >+
+      Consensus is at the heart of decentralised systems, having taken centre
+      stage with the introduction of Nakamoto’s Proof-of-Work (PoW) algorithm
+      and the subsequent explosion of blockchain technology. However, it also
+      poses a significant scalability bottleneck for blockchain networks. The
+      goal of this workshop is to present different scalability approaches being
+      pursued across different projects, and foster new ideas and
+      collaborations.
+
+
+
     buttons:
       - label: Register
         link: /
