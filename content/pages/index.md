@@ -30,8 +30,8 @@ blocks:
           xOffset: '300'
           yOffset: '-45'
     label: Protocol Labs Research invites you to
-    headline: Vector Commitment
-    subhead: Research Day
+    headline: 'ConsensusFactory: '
+    subhead: Decentralized Reflections on Consensus
     body: >
       Vector commitments are powerful primitives that find applications in many
       blockchains protocols. The goal of this workshop is to survey the state of
