@@ -104,9 +104,9 @@ blocks:
       - headline: Title 1
         time: '11:00 am'
         name: TBD
-      - headline: On the efficiency and flexibility of Linear-map vector commitments
+      - headline: Title 2
         time: '1:00 pm'
-        name: Arantxa Zapico
+        name: TBD
       - headline: Are Merkle trees a panacea
         time: '2:00 pm'
         name: Alin Tomescu
