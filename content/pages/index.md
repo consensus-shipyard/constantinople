@@ -107,9 +107,9 @@ blocks:
       - headline: Title 2
         time: '1:00 pm'
         name: TBD
-      - headline: Are Merkle trees a panacea
+      - headline: Title 3
         time: '2:00 pm'
-        name: Alin Tomescu
+        name: TBD
     _template: schedule
   - style:
       textAlignment: text-center
