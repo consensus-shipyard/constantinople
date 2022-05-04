@@ -101,9 +101,9 @@ blocks:
     headline: Event Schedule
     subhead: ''
     items:
-      - headline: A journey in vector commitments
+      - headline: Title 1
         time: '11:00 am'
-        name: Dario Fiore
+        name: TBD
       - headline: On the efficiency and flexibility of Linear-map vector commitments
         time: '1:00 pm'
         name: Arantxa Zapico
