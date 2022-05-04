@@ -77,20 +77,13 @@ blocks:
         headline: TBA
         text: |
           Abstract
-      - imageSrc: >-
-          https://res.cloudinary.com/protocolai/image/upload/v1651551192/consensus-factory/chris-peikert_cmwkxw.jpg
-        name: Chris Peikert
-        title: Algorand and U. of Michigan
-        label: 'Talk 6:'
-        headline: Vector and Functional Commitments from Lattices
-        text: >
-          Vector commitments (VCs) allow one to commit concisely to an ordered
-          sequence of values, so that the values at desired positions can later
-          be concisely and verifiably revealed. In addition, a VC can be
-          statelessly updatable, meaning that commitments and proofs can be
-          updated to reflect changes to individual entries, using knowledge of
-          just those changes (and not the entire vector). To date, there have
-          been relatively few post-quantum constructions.
+      - imageSrc: ''
+        name: TBD
+        title: TBD
+        label: 'Talk 2:'
+        headline: TBA
+        text: |
+          Abstract
     _template: speakerCards
   - background:
       src: >-
