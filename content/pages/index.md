@@ -60,7 +60,7 @@ blocks:
     headline: ''
     subhead: ''
     body: |
-      The event will be organized virtualy on June 22, 2022 at 11:00 CET.&#x20;
+      The event will be organized virtually on June 22, 2022 at 11:00 CET.&#x20;
 
       The following speakers confirmed their active participation:
     _template: banner
@@ -71,7 +71,7 @@ blocks:
         name: Arnaud Bailly
         title: Input Output (IOHK) Technical Lead | Engineering
         label: ''
-        text: >+
+        text: >
           **Arnaud Bailly** began developing software professionally in 1994, in
           various languages and settings. He graduated with a PhD from the
           University of Lille in 2005 and since then has worked as consultant,
@@ -79,26 +79,24 @@ blocks:
           mostly in software publishing companies. Arnaud has been a Haskell
           enthusiast since 2001 and had been coding professionally in Haskell
           for a decade before joining IOHK in 2021.
-
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
         name: Dankrad Feist
         title: Ethereum Foundation
         label: ''
         headline: ''
-        text: >+
+        text: >
           **Dankrad Feist** is an Ethereum researcher with a background in
           Theoretical Physics and Technology. Since joining the Ethereum
           Foundation in 2019, he has worked on topics that involve applied
           cryptography, such as sharding, statelessness, the proof of custody
           and other topics.
-
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651779483/consensus-factory/Sebastian_Nagel_IOHK_fsjek4.png
         name: Sebastian Nagel
         title: Input Output (IOHK) Software Engineering Lead | Engineering
         label: ''
-        text: >+
+        text: >
           **Sebastian Nagel** is an Austrian software engineer and functional
           programming enthusiast. He studied computer science and graduated from
           the Technical University of Munich with a master's degree in robotics,
@@ -108,14 +106,13 @@ blocks:
           languages, development platforms, and internet of things projects at
           Franka Emika, Sebastian joined IOHK in 2021. In his time off he
           usually roams the Alps climbing rock and ice.
-
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651780872/consensus-factory/Sergio_Mena_no_background_c08yra.png
         name: Sergio Mena
         title: Informal Systems
         label: ''
         headline: ''
-        text: >+
+        text: >
           **Sergio Mena** obtained a PhD in Distributed Systems from EPFL
           (Switzerland) in 2006. Before, he followed EPFL's Graduate School in
           Computer Science programme in 2001, and finished MSc (1999) and BSc
@@ -126,7 +123,6 @@ blocks:
           Currently, he works as a research engineer at Informal Systems. His
           research interests include fault-tolerant distributed systems, and
           congestion control for real time media.
-
     _template: speakerCards
   - background:
       src: >-
