@@ -152,11 +152,11 @@ blocks:
       textAlignment: text-center
       minHeight: min-h-0
       padding: pt-20 pb-20 pr-10 pl-10
-      width: narrow
+      width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-2xl mb-4 font-bold
-      subheadStyles: 'text-black font-1 text-lg mb-0 '
-      textStyles: 'text-black font-1 undefined mb-8 '
+      subheadStyles: 'text-black font-1 text-lg mb-3.5 '
+      textStyles: 'text-black font-1 text-lg mb-8 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: ''
