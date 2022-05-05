@@ -156,7 +156,7 @@ blocks:
     headline: ''
     subhead: ''
     body: |
-      **ConsensusFactory: Decentralized Reflections on Censensus**
+      ConsensusFactory: Decentralized Reflections on Censensus
 
       ****
     buttons:
