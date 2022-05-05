@@ -59,10 +59,7 @@ blocks:
     label: ''
     headline: ''
     subhead: ''
-    body: |
-      The event will be organized virtualy on June 22, 2022 at 11:00 CET.&#x20;
-
-      The following speakers confirmed their active participation:
+    body: ''
     _template: banner
   - headline: This is the main headline
     cards:
