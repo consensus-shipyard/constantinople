@@ -41,7 +41,7 @@ blocks:
       pursued across different projects, and foster new ideas and
       collaborations.
     buttons:
-      - label: Register
+      - label: Register Here
         link: /
       - label: ''
         link: /
