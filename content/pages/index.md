@@ -155,12 +155,14 @@ blocks:
       width: narrow
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-2xl mb-4 font-bold
-      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      subheadStyles: 'text-black font-1 text-lg mb-0 '
       textStyles: 'text-black font-1 undefined mb-8 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: ''
-    subhead: ''
+    subhead: >-
+      The ConsensusFactory: Decentralized Reflections on Consensus is going to
+      be organized as a virtual event. Please register in order to participate.
     body: |
       The registrations are now open.
     buttons:
