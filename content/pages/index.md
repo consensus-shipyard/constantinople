@@ -80,9 +80,10 @@ blocks:
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651779483/consensus-factory/Sebastian_Nagel_IOHK_fsjek4.png
         name: Sebastian Nagel
-        label: Input Output (IOHK) Software Engineering Lead | Engineering
+        title: Input Output (IOHK) Software Engineering Lead | Engineering
+        label: ''
         text: >+
-          Sebastian Nagel is an Austrian software engineer and functional
+          **Sebastian Nagel** is an Austrian software engineer and functional
           programming enthusiast. He studied computer science and graduated from
           the Technical University of Munich with a master's degree in robotics,
           cognition and intelligence. Within the robotics industry, he got to
