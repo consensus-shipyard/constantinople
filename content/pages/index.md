@@ -157,8 +157,9 @@ blocks:
       contentOrder: labelHeadingsContent
     label: ''
     headline: ''
-    subhead: 'ConsensusFactory: Decentralized Reflections'
-    body: ''
+    subhead: ''
+    body: |
+      **ConsensusFactory: Decentralized Reflections on Censensus**
     buttons:
       - label: Register Here
         link: /
