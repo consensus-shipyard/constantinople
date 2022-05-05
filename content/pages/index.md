@@ -134,7 +134,7 @@ blocks:
             https://res.cloudinary.com/protocolai/image/upload/v1651605750/consensus-factory/event-ornament-top_s0gkrv.svg
           alignment: top
           xOffset: '500'
-    headline: Event Schedule
+    headline: Virtual Event Schedule
     subhead: ''
     items:
       - headline: Program
