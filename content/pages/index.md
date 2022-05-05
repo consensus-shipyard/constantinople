@@ -158,7 +158,7 @@ blocks:
     body: |
       **ConsensusFactory: Decentralized Reflections on Censensus**
     buttons:
-      - label: Register
+      - label: Register Here
         link: /
         type: solid
         buttonFillStyles: bg-accent1
