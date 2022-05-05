@@ -59,11 +59,8 @@ blocks:
     label: ''
     headline: ''
     subhead: ''
-    body: >
-      More about the topic(s) to be discused. Lorem ipsum dolor sit amet,
-      consectetur adipiscing. Nam faucibus, eros ultrices lobortis laoreet, ex
-      tellus dapibus sapien, nec sodales ligula turpis ac dui. This X-hour event
-      will include a number of sessions that explore this \[adjective] topic.
+    body: |
+      Confirmed speakers
     _template: banner
   - headline: This is the main headline
     cards:
