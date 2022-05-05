@@ -33,6 +33,9 @@ blocks:
     headline: 'ConsensusFactory: '
     subhead: Decentralized Reflections on Consensus
     body: >
+      June 22, 2022 at 11:00 CET
+
+
       Consensus is at the heart of decentralised systems, having taken centre
       stage with the introduction of Nakamoto’s Proof-of-Work (PoW) algorithm
       and the subsequent explosion of blockchain technology. However, it also
