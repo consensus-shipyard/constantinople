@@ -92,13 +92,24 @@ blocks:
           Franka Emika, Sebastian joined IOHK in 2021. In his time off he
           usually roams the Alps climbing rock and ice.
 
-      - imageSrc: ''
-        name: TBD
-        title: TBD
-        label: 'Talk 1:'
-        headline: TBA
-        text: |
-          Abstract
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651780872/consensus-factory/Sergio_Mena_no_background_c08yra.png
+        name: Sergio Mena
+        title: Informal Systems
+        label: ''
+        headline: ''
+        text: >+
+          **Sergio Mena** obtained a PhD in Distributed Systems from EPFL
+          (Switzerland) in 2006. Before, he followed EPFL's Graduate School in
+          Computer Science programme in 2001, and finished MSc (1999) and BSc
+          (1996) in Computer Engineering at the Technical University of Valencia
+          (UPV, Spain). He worked as a teaching fellow at the University of York
+          (UK), and as a software engineer at Cisco (~12 years), where he
+          contributed to the research of congestion control algorithms.
+          Currently, he works as a research engineer at Informal Systems. His
+          research interests include fault-tolerant distributed systems, and
+          congestion control for real time media.
+
       - imageSrc: ''
         name: TBD
         title: TBD
