@@ -89,7 +89,7 @@ blocks:
           cryptography, such as sharding, statelessness, the proof of custody
           and other topics.
       - imageSrc: >-
-          https://res.cloudinary.com/protocolai/image/upload/v1651787801/S_Nagel_jfoofl.png
+          https://res.cloudinary.com/protocolai/image/upload/v1651787887/Nagel_osaria.png
         name: Sebastian Nagel
         title: Input Output (IOHK) Software Engineering Lead | Engineering
         label: ''
