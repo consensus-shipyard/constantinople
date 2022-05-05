@@ -157,6 +157,8 @@ blocks:
     subhead: ''
     body: |
       **ConsensusFactory: Decentralized Reflections on Censensus**
+
+      ****
     buttons:
       - label: Register Here
         link: /
