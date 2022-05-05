@@ -60,7 +60,7 @@ blocks:
     headline: ''
     subhead: ''
     body: |
-      The event will be organized virtually on June 22, 2022 at 11:00 CET.&#x20;
+      The event will be organized virtualy on June 22, 2022 at 11:00 CET.&#x20;
 
       The following speakers confirmed their active participation:
     _template: banner
@@ -143,6 +143,7 @@ blocks:
       - headline: Welcoming note
         time: '11:00 am'
         name: Program TBD
+    navigationLabel: ''
     _template: schedule
   - style:
       textAlignment: text-center
@@ -156,11 +157,8 @@ blocks:
       contentOrder: labelHeadingsContent
     label: ''
     headline: ''
-    subhead: >-
-      The ConsensusFactory: Decentralized Reflections on Consensus is going to
-      be organized as a virtual event. Please register in order to participate.
-    body: |
-      The registrations are now open.
+    subhead: 'ConsensusFactory: Decentralized Reflections'
+    body: ''
     buttons:
       - label: Register Here
         link: /
