@@ -64,6 +64,20 @@ blocks:
     _template: banner
   - headline: This is the main headline
     cards:
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651779372/consensus-factory/Arnaud_Bailly_IOHK_mnmqm6.png
+        name: Arnaud Bailly
+        label: Input Output (IOHK) Technical Lead | Engineering
+        text: >+
+          **Arnaud Bailly** began developing software professionally in 1994, in
+          various languages and settings. He graduated with a PhD from the
+          University of Lille in 2005 and since then has worked as consultant,
+          lead developer, technology chief, adviser, architect, and coach,
+          mostly in software publishing companies. Arnaud has been a Haskell
+          enthusiast since 2001 and had been coding professionally in Haskell
+          for a decade before joining IOHK in 2021.
+
+      - {}
       - imageSrc: ''
         name: TBD
         title: TBD
