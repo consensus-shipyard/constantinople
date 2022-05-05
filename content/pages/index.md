@@ -43,24 +43,26 @@ blocks:
     buttons:
       - label: Register
         link: /
-      - label: Learn More
+      - label: ''
         link: /
     _template: tailwindFeature
   - style:
-      textAlignment: text-left
+      textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-32 pb-32 pr-10 pl-10
+      padding: pt-14 pb-28 pr-10 pl-10
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: 'text-black font-1 text-5xl mb-0 '
       subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-1 text-2xl mb-0 '
+      textStyles: text-primary font-1 text-xl mb-0 font-bold
       contentOrder: labelHeadingsContent
     label: ''
     headline: ''
     subhead: ''
     body: |
-      Confirmed speakers
+      The event will be organized virtualy on June 22, 2022 at 11:00 CET.&#x20;
+
+      The following speakers confirmed their active participation:
     _template: banner
   - headline: This is the main headline
     cards:
@@ -142,15 +144,9 @@ blocks:
     headline: Event Schedule
     subhead: ''
     items:
-      - headline: Title 1
+      - headline: Welcoming note
         time: '11:00 am'
-        name: TBD
-      - headline: Title 2
-        time: '1:00 pm'
-        name: TBD
-      - headline: Title 3
-        time: '2:00 pm'
-        name: TBD
+        name: Program TBD
     _template: schedule
   - style:
       textAlignment: text-center
@@ -163,7 +159,7 @@ blocks:
       textStyles: 'text-black font-1 undefined mb-8 '
       contentOrder: labelHeadingsContent
     label: ''
-    headline: '[registration CTA]'
+    headline: ''
     subhead: ''
     body: |
       The registrations are now open.
