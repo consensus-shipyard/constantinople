@@ -79,6 +79,19 @@ blocks:
           for a decade before joining IOHK in 2021.
 
       - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
+        name: Dankrad Feist
+        title: Ethereum Foundation
+        label: ''
+        headline: ''
+        text: >+
+          **Dankrad Feist** is an Ethereum researcher with a background in
+          Theoretical Physics and Technology. Since joining the Ethereum
+          Foundation in 2019, he has worked on topics that involve applied
+          cryptography, such as sharding, statelessness, the proof of custody
+          and other topics.
+
+      - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651779483/consensus-factory/Sebastian_Nagel_IOHK_fsjek4.png
         name: Sebastian Nagel
         title: Input Output (IOHK) Software Engineering Lead | Engineering
@@ -111,19 +124,6 @@ blocks:
           Currently, he works as a research engineer at Informal Systems. His
           research interests include fault-tolerant distributed systems, and
           congestion control for real time media.
-
-      - imageSrc: >-
-          https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
-        name: Dankrad Feist
-        title: Ethereum Foundation
-        label: ''
-        headline: ''
-        text: >+
-          **Dankrad Feist** is an Ethereum researcher with a background in
-          Theoretical Physics and Technology. Since joining the Ethereum
-          Foundation in 2019, he has worked on topics that involve applied
-          cryptography, such as sharding, statelessness, the proof of custody
-          and other topics.
 
     _template: speakerCards
   - background:
@@ -165,11 +165,10 @@ blocks:
     label: ''
     headline: '[registration CTA]'
     subhead: ''
-    body: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing. Nam faucibus, eros
-      ultrices lobortis laoreet, ex tellus dapibus sapien.
+    body: |
+      The registrations are now open.
     buttons:
-      - label: Register
+      - label: Register Here
         link: /
         type: solid
         buttonFillStyles: bg-accent1
