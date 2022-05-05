@@ -112,13 +112,19 @@ blocks:
           research interests include fault-tolerant distributed systems, and
           congestion control for real time media.
 
-      - imageSrc: ''
-        name: TBD
-        title: TBD
-        label: 'Talk 2:'
-        headline: TBA
-        text: |
-          Abstract
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
+        name: Dankrad Feist
+        title: Ethereum Foundation
+        label: ''
+        headline: ''
+        text: >+
+          **Dankrad Feist** is an Ethereum researcher with a background in
+          Theoretical Physics and Technology. Since joining the Ethereum
+          Foundation in 2019, he has worked on topics that involve applied
+          cryptography, such as sharding, statelessness, the proof of custody
+          and other topics.
+
     _template: speakerCards
   - background:
       src: >-
