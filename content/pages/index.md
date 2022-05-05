@@ -137,9 +137,9 @@ blocks:
     headline: Event Schedule
     subhead: ''
     items:
-      - headline: Welcoming note
+      - headline: Program
         time: '11:00 am'
-        name: Program TBD
+        name: coming soon
     navigationLabel: ''
     _template: schedule
   - style:
