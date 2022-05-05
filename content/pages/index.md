@@ -77,7 +77,21 @@ blocks:
           enthusiast since 2001 and had been coding professionally in Haskell
           for a decade before joining IOHK in 2021.
 
-      - {}
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1651779483/consensus-factory/Sebastian_Nagel_IOHK_fsjek4.png
+        name: Sebastian Nagel
+        label: Input Output (IOHK) Software Engineering Lead | Engineering
+        text: >+
+          Sebastian Nagel is an Austrian software engineer and functional
+          programming enthusiast. He studied computer science and graduated from
+          the Technical University of Munich with a master's degree in robotics,
+          cognition and intelligence. Within the robotics industry, he got to
+          know and love Haskell, formal methods, domain-specific languages, and
+          interpreters. After several years creating robot programming
+          languages, development platforms, and internet of things projects at
+          Franka Emika, Sebastian joined IOHK in 2021. In his time off he
+          usually roams the Alps climbing rock and ice.
+
       - imageSrc: ''
         name: TBD
         title: TBD
