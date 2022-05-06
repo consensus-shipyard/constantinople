@@ -48,7 +48,7 @@
   "nav": {
     "navItems": [
       {
-        "label": "Join Us",
+        "label": "",
         "link": "/"
       }
     ],
@@ -81,7 +81,7 @@
       "label": "",
       "headline": "",
       "subhead": "",
-      "body": "[Protocol Labs Research](https://research.protocol.ai/ \"Protocol Labs Research\")\n",
+      "body": "[Protocol Labs Research](https://research.protocol.ai/)\n",
       "_template": "tailwindFeature"
     }
   ]
