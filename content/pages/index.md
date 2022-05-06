@@ -156,9 +156,9 @@ blocks:
     headline: ''
     subhead: ''
     body: |
-      ConsensusFactory: Decentralized Reflections on Censensus
+      ConsensusFactory: Decentralized Reflections on Consensus
 
-      ****
+      ***
     buttons:
       - label: Register Here
         link: /
