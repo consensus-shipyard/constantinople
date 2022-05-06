@@ -79,9 +79,9 @@
         "fillStyles": "bg-primary"
       },
       "label": "",
-      "headline": "Protocol Labs Research",
+      "headline": "",
       "subhead": "",
-      "body": "",
+      "body": "[Protocol Labs Research](https://research.protocol.ai/ \"Protocol Labs Research\")\n",
       "_template": "tailwindFeature"
     }
   ]
