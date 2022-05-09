@@ -42,7 +42,7 @@ blocks:
       collaborations.
     buttons:
       - label: Register Here
-        link: /
+        link: 'https://solarisevents.typeform.com/consensus'
       - label: ''
         link: /
     _template: tailwindFeature
