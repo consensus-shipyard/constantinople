@@ -38,7 +38,7 @@
     "color": "primary"
   },
   "logo": {
-    "logoType": "A virtual event on March 25, 2022",
+    "logoType": "A virtual event on June 22, 2022",
     "logoTypeStyle": "text-white undefined text-base undefined ",
     "image": "",
     "imageWidth": "",
@@ -48,7 +48,7 @@
   "nav": {
     "navItems": [
       {
-        "label": "Join Us",
+        "label": "",
         "link": "/"
       }
     ],
@@ -79,9 +79,9 @@
         "fillStyles": "bg-primary"
       },
       "label": "",
-      "headline": "Protocol Labs research",
+      "headline": "",
       "subhead": "",
-      "body": "",
+      "body": "[Protocol Labs Research](https://research.protocol.ai/)\n",
       "_template": "tailwindFeature"
     }
   ]
