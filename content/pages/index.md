@@ -161,7 +161,7 @@ blocks:
       ***
     buttons:
       - label: Register Here
-        link: 'https://solarisevents.typeform.com/consensus'
+        link: 'https://solarisevents.typeform.com/consensu'
         type: solid
         buttonFillStyles: bg-accent1
         textColor: white
