@@ -142,7 +142,10 @@ blocks:
           https://res.cloudinary.com/protocolai/image/upload/v1653502186/consensus-factory/siloutte_wleddb.png
         name: TBA
         title: TBD
-      - {}
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1653502186/consensus-factory/siloutte_wleddb.png
+        name: TBA
+        title: TBD
     _template: speakerCards
   - background:
       src: >-
