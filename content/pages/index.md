@@ -134,6 +134,12 @@ blocks:
           Currently, he works as a research engineer at Informal Systems. His
           research interests include fault-tolerant distributed systems, and
           congestion control for real time media.
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1653502186/consensus-factory/siloutte_wleddb.png
+        name: TBA
+        title: TBD
+      - {}
+      - {}
     _template: speakerCards
   - background:
       src: >-
