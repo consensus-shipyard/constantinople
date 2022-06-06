@@ -37,9 +37,9 @@ blocks:
       stage with the introduction of Nakamoto’s Proof-of-Work (PoW) algorithm
       and the subsequent explosion of blockchain technology. However, it also
       poses a significant scalability bottleneck for blockchain networks. The
-      goal of this workshop is to present different scalability approaches being
-      pursued across different projects, and foster new ideas and
-      collaborations.
+      goal of this event is to present different scalability approaches being
+      pursued by projects across the blockchain space, and, in the process, to
+      foster new ideas and new collaborations.
     buttons:
       - label: Register Here
         link: 'https://solarisevents.typeform.com/consensus'
