@@ -242,8 +242,16 @@ blocks:
     subhead: ''
     items:
       - headline: Program
-        time: '13:00-19:00 UTC'
+        time: '13:00-13:20 Welcome to ConsensusFactory - Marko Vukolić'
         name: coming soon
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
     navigationLabel: ''
     _template: schedule
   - style:
