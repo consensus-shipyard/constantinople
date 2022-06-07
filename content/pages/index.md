@@ -63,8 +63,8 @@ blocks:
     cards:
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651779372/consensus-factory/Arnaud_Bailly_IOHK_mnmqm6.png
-        name: Arnaud Bailly & Sebastian Nagel
-        title: Input Output (IOHK) | Engineering
+        name: Arnaud Bailly
+        title: Input Output (IOHK) Technical Lead | Engineering
         label: >-
           Arnaud Bailly began developing software professionally in 1994, in
           various languages and settings. He graduated with a PhD from the
