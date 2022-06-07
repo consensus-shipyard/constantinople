@@ -264,7 +264,6 @@ blocks:
       - headline: Decentralised Reflections on Consensus
         time: '17:00-18:00'
         name: Q&A
-      - {}
     navigationLabel: ''
     _template: schedule
   - style:
