@@ -241,9 +241,9 @@ blocks:
     headline: Virtual Event Schedule
     subhead: ''
     items:
-      - headline: Program
-        time: '13:00-13:20 Welcome to ConsensusFactory - Marko Vukolić'
-        name: coming soon
+      - headline: Welcome to ConsensusFactory
+        time: '13:00-13:20 '
+        name: Marko Vukolić
       - {}
       - {}
       - {}
