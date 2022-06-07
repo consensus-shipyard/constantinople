@@ -244,7 +244,9 @@ blocks:
       - headline: Welcome to ConsensusFactory
         time: '13:00-13:20 '
         name: Marko Vukolić
-      - {}
+      - headline: "ABCI++:\_Evolving Tendermint’s Modularity"
+        time: '13:20-14:00'
+        name: Sergio Mena
       - {}
       - {}
       - {}
