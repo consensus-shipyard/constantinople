@@ -167,9 +167,8 @@ blocks:
           https://res.cloudinary.com/protocolai/image/upload/v1651787887/Nagel_osaria.png
         name: Sebastian Nagel
         title: Input Output (IOHK) Software Engineering Lead | Engineering
-        label: ''
-        text: >
-          **Sebastian Nagel** is an Austrian software engineer and functional
+        label: >-
+          Sebastian Nagel is an Austrian software engineer and functional
           programming enthusiast. He studied computer science and graduated from
           the Technical University of Munich with a master's degree in robotics,
           cognition and intelligence. Within the robotics industry, he got to
@@ -178,6 +177,21 @@ blocks:
           languages, development platforms, and internet of things projects at
           Franka Emika, Sebastian joined IOHK in 2021. In his time off he
           usually roams the Alps climbing rock and ice.
+        headline: 'Hydra: Next Generation State Channels'
+        text: >
+          Accommodating a growing number of participants and transactions is a
+          problem in any distributed consensus system, and blockchains make no
+          exception, especially as they are gaining attention from a wider
+          audience.
+
+          Hydra Head Protocol is a Layer 2 solution for (e)UTxO based
+          distributed ledgers that is part of Cardano's strategy to accommodate
+          this growth, allowing the creation of Isomorphic Multi-party State
+          Channels between a limited set of participants.
+
+
+          This talk reflects on our experience taking Hydra Head from a research
+          paper to a production-ready system, over the past year and half.
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1652729448/consensus-factory/Alfonso_de_la_Rocha_IOHK_prxwmd.png
         name: Alfonso de la Rocha
