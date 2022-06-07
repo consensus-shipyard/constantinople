@@ -121,10 +121,8 @@ blocks:
           https://res.cloudinary.com/protocolai/image/upload/v1651780872/consensus-factory/Sergio_Mena_no_background_c08yra.png
         name: Sergio Mena
         title: Informal Systems
-        label: ''
-        headline: ''
-        text: >
-          **Sergio Mena** obtained a PhD in Distributed Systems from EPFL
+        label: >-
+          Sergio Mena obtained a PhD in Distributed Systems from EPFL
           (Switzerland) in 2006. Before, he followed EPFL's Graduate School in
           Computer Science programme in 2001, and finished MSc (1999) and BSc
           (1996) in Computer Engineering at the Technical University of Valencia
@@ -134,6 +132,37 @@ blocks:
           Currently, he works as a research engineer at Informal Systems. His
           research interests include fault-tolerant distributed systems, and
           congestion control for real time media.
+        headline: "ABCI++:\_Evolving Tendermint’s Modularity"
+        text: >+
+          Application BlockChain Interface (ABCI) is the boundary between
+          consensus and state machine replication (SMR) for Tendermint-based
+          blockchains in Cosmos. ABCI was designed with the main goal of hiding
+          the complexities of consensus to the SMR application developers. This
+          led to a fool-proof interface where all the application is required to
+          do is ensure deterministic execution in order to run on top of
+          consensus.
+
+
+          Over the years, the tradeoffs of such a simple, highly modular
+          interface became evident. If ABCI could expose more elements of
+          consensus execution, this would allow for a finer grained control of
+          SMR applications, such as transaction reordering or improved validity
+          checks. To overcome these limitations, a major evolution of ABCI,
+          called ABCI++, has been introduced.
+
+
+          ABCI++ increases the control an application developer has over
+          executions of SMR. This increased control comes at the cost of an
+          increased risk for the applications to accidentally affect core
+          properties of consensus. In ABCI, the only risk was non-determinism in
+          the application that could halt the chain. In ABCI++, buggy
+          applications can lead to additional problems for consensus.
+
+
+          In this talk we walk through the main innovations in ABCI++; we
+          discuss the new use cases they enable, as well as the risks they
+          introduce and how these risks are captured in the specification.
+
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651787887/Nagel_osaria.png
         name: Sebastian Nagel
