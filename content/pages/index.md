@@ -261,7 +261,9 @@ blocks:
       - headline: Speculative Smart Contracts in the Algorand Blockchain
         time: '16:20-17:00'
         name: Victor Luchangco
-      - {}
+      - headline: Decentralised Reflections on Consensus
+        time: '17:00-18:00'
+        name: Q&A
       - {}
     navigationLabel: ''
     _template: schedule
