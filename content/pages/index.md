@@ -95,14 +95,21 @@ blocks:
           https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
         name: Dankrad Feist
         title: Ethereum Foundation
-        label: ''
-        headline: ''
-        text: >
-          **Dankrad Feist** is an Ethereum researcher with a background in
+        label: >-
+          Dankrad Feist is an Ethereum researcher with a background in
           Theoretical Physics and Technology. Since joining the Ethereum
           Foundation in 2019, he has worked on topics that involve applied
           cryptography, such as sharding, statelessness, the proof of custody
           and other topics.
+        headline: >-
+          Data availability commitments with distributed reconstruction thanks
+          to 2d KZG commitments
+        text: >+
+          Thanks to KZG commitments and their homomorphic properties, we were
+          able to construct a unique data sharding solution that supports high
+          data bandwidth while preserving security properties without requiring
+          powerful actors (beyond normal validating nodes) in the network.
+
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1653726196/consensus-factory/Victor_Luchangco_jcqv4p.png
         name: Victor Luchangco
