@@ -255,7 +255,9 @@ blocks:
       - headline: 'Hydra: Next Generation State Channels'
         time: '14:50-15:30'
         name: Arnaud Bailly & Sebastian Nagel
-      - {}
+      - headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
+        time: '15:30-16:10'
+        name: Alfonso de la Rocha
       - {}
       - {}
       - {}
