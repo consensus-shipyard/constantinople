@@ -239,7 +239,7 @@ blocks:
           alignment: top
           xOffset: '500'
     headline: Virtual Event Schedule
-    subhead: 'June 22. 2022 - 13:00-18:00 UTC'
+    subhead: ''
     items:
       - headline: Welcome to ConsensusFactory
         time: '13:00-13:20 '
