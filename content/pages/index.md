@@ -196,18 +196,34 @@ blocks:
           https://res.cloudinary.com/protocolai/image/upload/v1652729448/consensus-factory/Alfonso_de_la_Rocha_IOHK_prxwmd.png
         name: Alfonso de la Rocha
         title: Protocol Labs | ConsensusLab
-        text: >
+        label: >-
           Before joining Protocol Labs, Alfonso de la Rocha worked as a
-          blockchain expert at Telefónica R\&D, where he was responsible for the
+          blockchain expert at Telefónica R&D, where he was responsible for the
           design and development of core technology based on blockchains,
           distributed systems, and advanced cryptography. Alfonso’s involvement
           in research and development began at Universidad Politécnica de
           Madrid, where he worked on topics related to energy efficiency in data
-          centers. His broad R\&D experience also includes research into the
+          centers. His broad R&D experience also includes research into the
           compression efficiency of video coding standards at Ericsson Research
           and projects related to securing interdomain routing protocols at KTH
           Royal Institute of Technology in Stockholm. Alfonso is also an avid
           reader and basketball lover.
+        headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
+        text: >+
+          We present the Filecoin Hierarchical Consensus framework, which aims
+          to overcome the throughput challenges of blockchain consensus by
+          horizontally scaling the network. Unlike traditional sharding designs,
+          based on partitioning the state of the network, our solution centers
+          on the concept of subnets –which are organized hierarchically– and can
+          be spawned on-demand to manage new state. Child subnets are firewalled
+          from parent subnets, have their own specific policies, and run a
+          different consensus algorithm, increasing the network capacity and
+          enabling new applications. Moreover, they benefit from the security of
+          parent subnets by periodically checkpointing state. In this paper, we
+          introduce the overall system architecture, our detailed designs for
+          cross-net transaction handling, and the open questions that we are
+          still exploring.
+
     _template: speakerCards
   - background:
       src: >-
