@@ -247,7 +247,11 @@ blocks:
       - headline: "ABCI++:\_Evolving Tendermint’s Modularity"
         time: '13:20-14:00'
         name: Sergio Mena
-      - {}
+      - headline: >-
+          Data availability commitments with distributed reconstruction thanks
+          to 2d KZG commitments
+        time: '14:00-14:40'
+        name: Dankrad Feist
       - {}
       - {}
       - {}
