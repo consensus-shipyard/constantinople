@@ -252,8 +252,9 @@ blocks:
           to 2d KZG commitments
         time: '14:00-14:40'
         name: Dankrad Feist
-      - {}
-      - {}
+      - headline: 'Hydra: Next Generation State Channels'
+        time: '14:50-15:30'
+        name: Arnaud Bailly & Sebastian Nagel
       - {}
       - {}
       - {}
