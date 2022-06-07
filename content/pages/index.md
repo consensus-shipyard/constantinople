@@ -258,7 +258,9 @@ blocks:
       - headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
         time: '15:30-16:10'
         name: Alfonso de la Rocha
-      - {}
+      - headline: Speculative Smart Contracts in the Algorand Blockchain
+        time: '16:20-17:00'
+        name: Victor Luchangco
       - {}
       - {}
     navigationLabel: ''
