@@ -63,17 +63,34 @@ blocks:
     cards:
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651779372/consensus-factory/Arnaud_Bailly_IOHK_mnmqm6.png
-        name: Arnaud Bailly
-        title: Input Output (IOHK) Technical Lead | Engineering
-        label: ''
-        text: >
-          **Arnaud Bailly** began developing software professionally in 1994, in
+        name: Arnaud Bailly & Sebastian Nagel
+        title: Input Output (IOHK) | Engineering
+        label: >-
+          Arnaud Bailly began developing software professionally in 1994, in
           various languages and settings. He graduated with a PhD from the
           University of Lille in 2005 and since then has worked as consultant,
           lead developer, technology chief, adviser, architect, and coach,
           mostly in software publishing companies. Arnaud has been a Haskell
           enthusiast since 2001 and had been coding professionally in Haskell
           for a decade before joining IOHK in 2021.
+        headline: 'Hydra: Next Generation State Channels'
+        text: >+
+          Accommodating a growing number of participants and transactions is a
+          problem in any distributed consensus system, and blockchains make no
+          exception, especially as they are gaining attention from a wider
+          audience.
+
+          Hydra Head Protocol is a Layer 2 solution for (e)UTxO based
+          distributed ledgers that is part of Cardano's strategy to accommodate
+          this growth, allowing the creation of Isomorphic Multi-party State
+          Channels between a limited set of participants.
+
+
+          This talk reflects on our experience taking Hydra Head from a research
+          paper to a production-ready system, over the past year and half.
+
+
+
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1651780333/consensus-factory/Dankrad_Feist_no_background_pbleub.png
         name: Dankrad Feist
