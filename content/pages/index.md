@@ -288,5 +288,6 @@ blocks:
 meta:
   pageTitle: Consensus Factory
   pageDescription: Consensus Factory
+  siteImageSrc: ''
 ---
 
