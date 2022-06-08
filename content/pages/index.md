@@ -288,6 +288,7 @@ blocks:
 meta:
   pageTitle: Consensus Factory
   pageDescription: Consensus Factory
-  siteImageSrc: ''
+  siteImageSrc: >-
+    https://res.cloudinary.com/protocolai/image/upload/v1654716841/consensus-factory/Concensus_Factory_Twitter_nnzpyk.jpg
 ---
 
