@@ -254,7 +254,7 @@ blocks:
         name: 'Alfonso de la Rocha, Protocol Labs | ConsensusLab'
       - headline: Speculative Smart Contracts in the Algorand Blockchain
         time: '16:20-17:00'
-        name: Victor Luchangco
+        name: 'Victor Luchangco, Algorand | Principal Algorithms Researcher'
       - headline: Decentralised Reflections on Consensus
         time: '17:00-18:00'
         name: Q&A
