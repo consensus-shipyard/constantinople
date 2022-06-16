@@ -62,9 +62,9 @@ blocks:
   - headline: This is the main headline
     cards:
       - imageSrc: >-
-          https://res.cloudinary.com/protocolai/image/upload/v1651779372/consensus-factory/Arnaud_Bailly_IOHK_mnmqm6.png
-        name: Arnaud Bailly
-        title: Input Output (IOHK) Technical Lead | Engineering
+          https://res.cloudinary.com/protocolai/image/upload/v1655394469/consensus-factory/IOHK_merged_x6wnnp.png
+        name: Arnaud Bailly & Sebastian Nagel
+        title: 'Input Output (IOHK) '
         label: >-
           Arnaud Bailly began developing software professionally in 1994, in
           various languages and settings. He graduated with a PhD from the
