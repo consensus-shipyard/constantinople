@@ -237,7 +237,7 @@ blocks:
     items:
       - headline: Welcome to ConsensusFactory
         time: '13:00-13:20 '
-        name: Marko Vukolić
+        name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
       - headline: "ABCI++:\_Evolving Tendermint’s Modularity"
         time: '13:20-14:00'
         name: Sergio Mena
@@ -287,7 +287,9 @@ blocks:
     _template: banner
 meta:
   pageTitle: Consensus Factory
-  pageDescription: 'Consensus is at the heart of decentralised systems. Join us on 22 June to discuss how different L1 ecosystems approach scalability.'
+  pageDescription: >-
+    Consensus is at the heart of decentralised systems. Join us on 22 June to
+    discuss how different L1 ecosystems approach scalability.
   siteImageSrc: >-
     https://res.cloudinary.com/protocolai/image/upload/v1654803875/consensus-factory/Concensus_Factory_Twitter_wl8pj1.jpg
 ---
