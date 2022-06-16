@@ -240,7 +240,7 @@ blocks:
         name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
       - headline: "ABCI++:\_Evolving Tendermint’s Modularity"
         time: '13:20-14:00'
-        name: Sergio Mena
+        name: 'Sergio Mena, Informal Systems'
       - headline: >-
           Data availability commitments with distributed reconstruction thanks
           to 2d KZG commitments
