@@ -72,7 +72,16 @@ blocks:
           lead developer, technology chief, adviser, architect, and coach,
           mostly in software publishing companies. Arnaud has been a Haskell
           enthusiast since 2001 and had been coding professionally in Haskell
-          for a decade before joining IOHK in 2021.
+          for a decade before joining IOHK in 2021. Sebastian Nagel is an
+          Austrian software engineer and functional programming enthusiast. He
+          studied computer science and graduated from the Technical University
+          of Munich with a master's degree in robotics, cognition and
+          intelligence. Within the robotics industry, he got to know and love
+          Haskell, formal methods, domain-specific languages, and interpreters.
+          After several years creating robot programming languages, development
+          platforms, and internet of things projects at Franka Emika, Sebastian
+          joined IOHK in 2021. In his time off he usually roams the Alps
+          climbing rock and ice.
         headline: 'Hydra: Next Generation State Channels'
         text: >
           Accommodating a growing number of participants and transactions is a
