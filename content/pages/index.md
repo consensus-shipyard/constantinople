@@ -245,7 +245,7 @@ blocks:
           Data availability commitments with distributed reconstruction thanks
           to 2d KZG commitments
         time: '14:00-14:40'
-        name: Dankrad Feist
+        name: 'Dankrad Feist, Ethereum Foundation'
       - headline: 'Hydra: Next Generation State Channels'
         time: '14:50-15:30'
         name: 'Arnaud Bailly & Sebastian Nagel, Input Output (IOHK) '
