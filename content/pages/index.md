@@ -57,7 +57,9 @@ blocks:
     _template: embed
   - headline: This is the main headline
     cards:
-      - name: Marko Vukolić
+      - imageSrc: >-
+          https://res.cloudinary.com/protocolai/image/upload/v1655756520/consensus-factory/marko_vukoli_he2xhv.png
+        name: Marko Vukolić
         title: Protocol Labs | ConsensusLab
         label: "Marko joined Protocol Labs mid-2021 as the ConsensusLab lead. Prior to this he was a Principal Research Staff Member in\_IBM Research Zurich, where he worked from 2015-2021 and earlier as a PostDoc (2008-2010). Marko obtained a Doctor of Science (PhD) degree in Distributed Systems from EPFL in the\_Distributed Programming Laboratory (LPD)\_in 2008. Prior to his PhD, Marko graduated from the\_EPFL Doctoral School in Computer and Communication Sciences\_in 2003 and obtained a dipl.ing. degree in Electrical Engineering (Telecommunications) from the\_School of Electrical Engineering, University of Belgrade, in 2001. Marko’s main research interest is in decentralized systems, that is in distributed systems that span multiple administrative and trust domains (e.g., permissionless and permissioned blockchain systems)."
         headline: ''
