@@ -45,20 +45,16 @@ blocks:
         link: 'https://solarisevents.typeform.com/consensus'
     _template: tailwindFeature
   - style:
-      textAlignment: text-center
       minHeight: min-h-0
-      padding: pt-14 pb-28 pr-10 pl-10
-      width: normal
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-5xl mb-0 '
-      subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: text-primary font-1 text-xl mb-0 font-bold
-      contentOrder: labelHeadingsContent
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    _template: banner
+      fullWidth: true
+      padding: pt-20 pb-20 pr-20 pl-20
+    markup: |-
+      <div class="mx-auto max-w-full">
+        <div class="relative height-0" style="padding-bottom: 56.25%;">
+          <iframe src="https://www.youtube.com/embed/e9M4cqrgmqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+    _template: embed
   - headline: This is the main headline
     cards:
       - imageSrc: >-
