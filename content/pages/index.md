@@ -57,7 +57,7 @@ blocks:
     label: ''
     headline: Join the discussion
     subhead: ''
-    body: "`If you would like to participate in the Consensus Factory live discussion join the\_#consensus\_channel. If you are new to Slack, follow this 2 simple steps:3:16 Sign up for an account at\_filecoin.io/slack Join us in the\_#consensus\_channel!`\n"
+    body: "`If you would like to participate in the Consensus Factory live discussion join the\_#consensus\_channel. If you are new to Slack, follow this 2 simple steps:`\n\n1.  `3:16 Sign up for an account at\_filecoin.io/slack`\n2.  `Join us in the\_#consensus\_channel!`\n"
     _template: banner
   - style:
       minHeight: min-h-0
