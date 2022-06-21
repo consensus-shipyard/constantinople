@@ -47,24 +47,35 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-20 pr-10 pl-10
+      padding: 'pt-20 pb-0 pr-60 pl-10 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-5xl mb-0 '
+      headlineStyles: text-primary font-2 text-2xl mb-5 font-bold
       subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-2 undefined mb-0 '
+      textStyles: 'text-black font-1 text-base mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Join the discussion
     subhead: ''
-    body: "`If you would like to participate in the Consensus Factory live discussion join the\_#consensus\_channel. If you are new to Slack, follow this 2 simple steps:`\n\n1.  `3:16 Sign up for an account at\_filecoin.io/slack`\n2.  `Join us in the\_#consensus\_channel!`\n"
+    body: >
+      If you would like to participate in the Consensus Factory live discussion
+      join the [#consensus](https://app.slack.com/client/TEHTVS1L6/C02D73MHM63)
+      channel. If you are new to Slack follow these 2 simple steps:
+
+
+      1.  Sign up for an account at
+      [filecoin.io/slack](https://filecoin.io/slack)
+
+      2.  Join us in the
+      [#consensus](https://app.slack.com/client/TEHTVS1L6/C02D73MHM63
+      "#consensus") channel!
     _template: banner
   - style:
       minHeight: min-h-0
       fullWidth: true
       padding: pt-20 pb-20 pr-20 pl-20
     markup: |-
-      <div class="mx-auto max-w-full">
+      <div class="mx-auto max-w-desktop-full">
         <div class="relative height-0" style="padding-bottom: 56.25%;">
           <iframe src="https://www.youtube.com/embed/e9M4cqrgmqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
         </div>
