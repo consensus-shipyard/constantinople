@@ -45,6 +45,22 @@ blocks:
         link: 'https://solarisevents.typeform.com/consensus'
     _template: tailwindFeature
   - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-20 pr-10 pb-20 pl-10
+      width: normal
+      labelStyles: text-black font-1 text-sm mb-0
+      headlineStyles: text-black font-1 text-5xl mb-0
+      subheadStyles: text-black font-1 text-3xl mb-0
+      textStyles: text-black font-1 text-md mb-0
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: Join the discussion
+    subhead: ''
+    body: |
+      ``
+    _template: banner
+  - style:
       minHeight: min-h-0
       fullWidth: true
       padding: pt-20 pb-20 pr-20 pl-20
@@ -63,6 +79,7 @@ blocks:
         title: Protocol Labs | ConsensusLab
         label: "Marko joined Protocol Labs mid-2021 as the ConsensusLab lead. Prior to this he was a Principal Research Staff Member in\_IBM Research Zurich, where he worked from 2015-2021 and earlier as a PostDoc (2008-2010). Marko obtained a Doctor of Science (PhD) degree in Distributed Systems from EPFL in the\_Distributed Programming Laboratory (LPD)\_in 2008. Prior to his PhD, Marko graduated from the\_EPFL Doctoral School in Computer and Communication Sciences\_in 2003 and obtained a dipl.ing. degree in Electrical Engineering (Telecommunications) from the\_School of Electrical Engineering, University of Belgrade, in 2001. Marko’s main research interest is in decentralized systems, that is in distributed systems that span multiple administrative and trust domains (e.g., permissionless and permissioned blockchain systems)."
         headline: ''
+        text: ''
       - imageSrc: >-
           https://res.cloudinary.com/protocolai/image/upload/v1655394469/consensus-factory/IOHK_merged_x6wnnp.png
         name: Arnaud Bailly & Sebastian Nagel
