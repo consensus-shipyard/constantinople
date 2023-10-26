@@ -32,7 +32,7 @@ blocks:
     label: Protocol Labs Research invites you to
     headline: 'InterPlanetary Consensus'
     subhead: Custom L2+ to Scale Filecoin & Beyond
-    body: 'Istanbul, 16 November 2023'
+    body: 'Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023. Istanbul, 16 November 2023.'
     buttons:
       - label: Register Here
         link: 'https://23.labweek.io/countdown-to-ipc'
