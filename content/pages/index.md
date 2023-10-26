@@ -34,6 +34,7 @@ blocks:
     subhead: Custom L2+ to Scale Filecoin & Beyond
     body: >
       Istanbul, 16 November 2023
+      
       A Lab Week 23 Companion Event
     buttons:
       - label: Register Here
