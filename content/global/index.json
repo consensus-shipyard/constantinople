@@ -37,6 +37,14 @@
   "links": {
     "color": "primary"
   },
+  "logo": {
+    "logoType": "Istanbul, 16 November 2023 - A Lab Week 23 Event",
+    "logoTypeStyle": "text-white undefined text-base undefined ",
+    "image": "",
+    "imageWidth": "",
+    "imageHeight": "",
+    "imageMargin": "24"
+  },  
   "nav": {
     "navItems": [
       {
