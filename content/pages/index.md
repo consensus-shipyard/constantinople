@@ -33,10 +33,10 @@ blocks:
     headline: 'InterPlanetary Consensus'
     subhead: Custom L2+ to Scale Filecoin & Beyond
     body: >
-      IPC is the next frontier in blockchain scalability, unlocking unmatched capacity and enabling new use cases.
+      As we count down towards IPC general availability, we bring together developers, users, and other stakeholders for a day of talks and workshops. Listen to the latest developments, learn about the exciting products built on it, and take part in crafting the future of IPC.
     buttons:
       - label: Register Here
-        link: 'https://solarisevents.typeform.com/consensus'
+        link: 'https://23.labweek.io/countdown-to-ipcs'
     _template: tailwindFeature
   - style:
       textAlignment: text-left
@@ -97,27 +97,34 @@ blocks:
     headline: Event Schedule
     subhead: '16 November 2023 - 09:00-17:00 UTC'
     items:
-      - headline: Welcome to ConsensusFactory
-        time: '13:00-13:20 '
-        name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
-      - headline: Welcome to ConsensusFactory
-        time: '13:00-13:20 '
-        name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
-      - headline: Welcome to ConsensusFactory
-        time: '13:00-13:20 '
-        name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
-      - headline: Welcome to ConsensusFactory
-        time: '13:00-13:20 '
-        name: 'Marko Vukolić, Protocol Labs | ConsensusLab'
-      - headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
-        time: '15:30-16:10'
-        name: 'Alfonso de la Rocha, Protocol Labs | ConsensusLab'
-      - headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
-        time: '15:30-16:10'
-        name: 'Alfonso de la Rocha, Protocol Labs | ConsensusLab'
-      - headline: 'Hierarchical consensus: A horizontal scaling framework for blockchains'
-        time: '15:30-16:10'
-        name: 'Alfonso de la Rocha, Protocol Labs | ConsensusLab'
+      - headline: IPC Vision and Roadmap
+        time: '09:00'
+        name: 'Mikhail Turilin, Protocol Labs'
+      - headline: IPC Technical Strategy
+        time: '09:30'
+        name: 'Raúl Kripalani, Protocol Labs'
+      - headline: How does IPC compare to other scaling solutions?
+        time: '10:00'
+        name: 'Marko Vukolić, Protocol Labs'
+      - headline: 'Launch: Fendermint and Canopy'
+        time: '10:30'
+        name: 'Alfonso de la Rocha, Protocol Labs'
+      - headline: Break
+        time: '10:30'
+      - headline: 'Scaling Filecoin'
+        time: '11:00'
+        name: 'Juan Benet, Protocol Labs'
+      - headline: 'IPC for Founders'
+        time: '11:30'
+        name: 'Parth Pathak, Protocol Labs'
+      - headline: 'Lunch'
+        time: '12:00'
+      - headline: 'Workshop: Deploying an EVM Smart Contract on a Subnet'
+        time: '14:00'
+        name: 'Longfei Wang, Protocol Labs'
+      - headline: 'Workshop: Deploying an IPC Subnet'
+        time: '15:30'
+        name: 'Sarah Thiam, Protocol Labs'        
     navigationLabel: ''
     _template: schedule
   - style:
@@ -139,7 +146,7 @@ blocks:
       ***
     buttons:
       - label: Register Here
-        link: 'https://solarisevents.typeform.com/consensus'
+        link: 'https://23.labweek.io/countdown-to-ipc'
         type: solid
         buttonFillStyles: bg-accent1
         textColor: white
@@ -148,7 +155,7 @@ blocks:
 meta:
   pageTitle: 'InterPlanetary Consensus: Custom L2+ to Scale Filecoin & Beyond'
   pageDescription: >-
-    Consensus is at the heart of decentralised systems. Join us on June 22 to
-    discuss how different L1 ecosystems approach scalability...
+    Listen to the latest developments, learn about the exciting products built on it, 
+    and take part in crafting the future of IPC.
 ---
 
