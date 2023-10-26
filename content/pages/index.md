@@ -33,7 +33,8 @@ blocks:
     headline: 'InterPlanetary Consensus'
     subhead: Custom L2+ to Scale Filecoin & Beyond
     body: >
-      As we count down towards IPC general availability, we bring together developers, users, and other stakeholders for a day of talks and workshops. Listen to the latest developments, learn about the exciting products built on it, and take part in crafting the future of IPC.
+      Istanbul, 16 November 2023
+      A Lab Week 23 Companion Event
     buttons:
       - label: Register Here
         link: 'https://23.labweek.io/countdown-to-ipcs'
